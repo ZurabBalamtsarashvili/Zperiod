@@ -952,7 +952,7 @@ function attachVirtualLabListeners() {
     cubeEl.style.justifyContent = 'center';
     cubeEl.style.fontSize = '17px';
     cubeEl.style.fontWeight = '800';
-    cubeEl.style.fontFamily = "'Inter', sans-serif";
+    cubeEl.style.fontFamily = "'Inter', 'Zperiod Georgian', 'Noto Sans Georgian', sans-serif";
     cubeEl.style.textShadow = '0 1px 2px rgba(0,0,0,0.25)';
     cubeEl.innerHTML = `<span style="color:${selectedElement.color};text-shadow:none;font-size:17px;font-weight:800">${selectedElement.sym}</span>`;
   }
@@ -3038,7 +3038,7 @@ function generateSolubilityToolContent() {
                 --text-secondary: #86868b;
                 --accent-green: #10b981;
 
-                font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif;
+                font-family: 'Inter', 'Zperiod Georgian', 'Noto Sans Georgian', -apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif;
                 display: flex;
                 flex-direction: column;
                 flex: 1;

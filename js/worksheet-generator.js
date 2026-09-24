@@ -137,7 +137,8 @@ const WORKSHEET_PHRASE_MAP = {
         ru: 'Пожалуйста, выберите хотя бы один тип реакции',
         fa: 'لطفا حداقل یک نوع واکنش را انتخاب کنید',
         ur: 'براہ کرم کم از کم ایک قسم کا ردعمل منتخب کریں',
-        tl: 'Pumili ng kahit isang uri ng reaksyon'
+        tl: 'Pumili ng kahit isang uri ng reaksyon',
+        ka: 'გთხოვთ, აირჩიოთ რეაქციის ერთი ტიპი მაინც'
     },
     'Answer Key': {
         'zh-Hant': '答案',
@@ -145,7 +146,8 @@ const WORKSHEET_PHRASE_MAP = {
         ru: 'Ответы',
         fa: 'پاسخنامه',
         ur: 'جوابات',
-        tl: 'Susi ng Sagot'
+        tl: 'Susi ng Sagot',
+        ka: 'პასუხები'
     },
     'Online Practice': {
         'zh-Hant': '線上練習',
@@ -153,7 +155,8 @@ const WORKSHEET_PHRASE_MAP = {
         ru: 'Онлайн-практика',
         fa: 'تمرین آنلاین',
         ur: 'آن لائن مشق',
-        tl: 'Online na Pagsasanay'
+        tl: 'Online na Pagsasanay',
+        ka: 'ონლაინ სავარჯიშო'
     },
     'Balancing Chemical Equations': {
         'zh-Hant': '化學方程式配平練習',
@@ -161,7 +164,8 @@ const WORKSHEET_PHRASE_MAP = {
         ru: 'Балансировка химических уравнений',
         fa: 'موازنه معادلات شیمیایی',
         ur: 'کیمیائی مساوات کو متوازن کرنا',
-        tl: 'Pagbabalanse ng mga Kemikal na Ekweisyon'
+        tl: 'Pagbabalanse ng mga Kemikal na Ekweisyon',
+        ka: 'ქიმიური განტოლებების გათანაბრება'
     },
     'Fill in the coefficients and click Check.': {
         'zh-Hant': '填入係數後點擊檢查。',
@@ -169,7 +173,8 @@ const WORKSHEET_PHRASE_MAP = {
         ru: 'Введите коэффициенты и нажмите Проверить.',
         fa: 'ضرایب را وارد کنید و روی بررسی کلیک کنید.',
         ur: 'ضریب درج کریں اور چیک پر کلک کریں۔',
-        tl: 'Ilagay ang coefficients at i-click ang Suriin.'
+        tl: 'Ilagay ang coefficients at i-click ang Suriin.',
+        ka: 'შეიყვანეთ კოეფიციენტები და დააჭირეთ „შემოწმებას“.'
     },
     'Balance the equations by filling in the coefficients.': {
         'zh-Hant': '配平方程式，在空格內填入係數。',
@@ -177,7 +182,8 @@ const WORKSHEET_PHRASE_MAP = {
         ru: 'Сбалансируйте уравнения, вписав коэффициенты.',
         fa: 'با نوشتن ضرایب، معادلات را موازنه کنید.',
         ur: 'ضریب بھر کر مساوات کو متوازن کریں۔',
-        tl: 'I-balance ang mga ekwasyon sa pamamagitan ng paglalagay ng coefficients.'
+        tl: 'I-balance ang mga ekwasyon sa pamamagitan ng paglalagay ng coefficients.',
+        ka: 'გაათანაბრეთ განტოლებები კოეფიციენტების ჩაწერით.'
     },
     Easy: {
         'zh-Hant': '簡單',
@@ -185,7 +191,8 @@ const WORKSHEET_PHRASE_MAP = {
         ru: 'Легко',
         fa: 'آسان',
         ur: 'آسان',
-        tl: 'Madali'
+        tl: 'Madali',
+        ka: 'მარტივი'
     },
     Medium: {
         'zh-Hant': '中等',
@@ -193,7 +200,8 @@ const WORKSHEET_PHRASE_MAP = {
         ru: 'Средне',
         fa: 'متوسط',
         ur: 'درمیانہ',
-        tl: 'Katamtaman'
+        tl: 'Katamtaman',
+        ka: 'საშუალო'
     },
     Hard: {
         'zh-Hant': '困難',
@@ -201,7 +209,8 @@ const WORKSHEET_PHRASE_MAP = {
         ru: 'Сложно',
         fa: 'سخت',
         ur: 'مشکل',
-        tl: 'Mahirap'
+        tl: 'Mahirap',
+        ka: 'რთული'
     },
     Synthesis: {
         'zh-Hant': '合成',
@@ -209,7 +218,8 @@ const WORKSHEET_PHRASE_MAP = {
         ru: 'Синтез',
         fa: 'ترکیب',
         ur: 'ترکیب',
-        tl: 'Sintesis'
+        tl: 'Sintesis',
+        ka: 'შეერთება'
     },
     Decomp: {
         'zh-Hant': '分解',
@@ -217,7 +227,8 @@ const WORKSHEET_PHRASE_MAP = {
         ru: 'Разложение',
         fa: 'تجزیه',
         ur: 'تجزیہ',
-        tl: 'Pagkabulok'
+        tl: 'Pagkabulok',
+        ka: 'დაშლა'
     },
     'Single Rep': {
         'zh-Hant': '單取代',
@@ -225,7 +236,8 @@ const WORKSHEET_PHRASE_MAP = {
         ru: 'Одиночное замещение',
         fa: 'جانشینی تکی',
         ur: 'سنگل ریپلیسمنٹ',
-        tl: 'Single Replacement'
+        tl: 'Single Replacement',
+        ka: 'ჩანაცვლება'
     },
     'Double Rep': {
         'zh-Hant': '復分解',
@@ -233,7 +245,8 @@ const WORKSHEET_PHRASE_MAP = {
         ru: 'Двойное замещение',
         fa: 'جانشینی دوگانه',
         ur: 'ڈبل ریپلیسمنٹ',
-        tl: 'Double Replacement'
+        tl: 'Double Replacement',
+        ka: 'მიმოცვლა'
     },
     Combustion: {
         'zh-Hant': '燃燒',
@@ -241,7 +254,8 @@ const WORKSHEET_PHRASE_MAP = {
         ru: 'Горение',
         fa: 'احتراق',
         ur: 'کمبسشن',
-        tl: 'Pagsunog'
+        tl: 'Pagsunog',
+        ka: 'წვა'
     },
     questions: {
         'zh-Hant': '題',
@@ -249,7 +263,8 @@ const WORKSHEET_PHRASE_MAP = {
         ru: 'вопросов',
         fa: 'پرسش',
         ur: 'سوالات',
-        tl: 'tanong'
+        tl: 'tanong',
+        ka: 'კითხვა'
     },
     Name: {
         'zh-Hant': '姓名',
@@ -257,7 +272,8 @@ const WORKSHEET_PHRASE_MAP = {
         ru: 'Имя',
         fa: 'نام',
         ur: 'نام',
-        tl: 'Pangalan'
+        tl: 'Pangalan',
+        ka: 'სახელი'
     },
     Date: {
         'zh-Hant': '日期',
@@ -265,7 +281,8 @@ const WORKSHEET_PHRASE_MAP = {
         ru: 'Дата',
         fa: 'تاریخ',
         ur: 'تاریخ',
-        tl: 'Petsa'
+        tl: 'Petsa',
+        ka: 'თარიღი'
     },
     Score: {
         'zh-Hant': '得分',
@@ -273,7 +290,8 @@ const WORKSHEET_PHRASE_MAP = {
         ru: 'Оценка',
         fa: 'امتیاز',
         ur: 'اسکور',
-        tl: 'Iskor'
+        tl: 'Iskor',
+        ka: 'ქულა'
     },
     Check: {
         'zh-Hant': '檢查',
@@ -281,7 +299,8 @@ const WORKSHEET_PHRASE_MAP = {
         ru: 'Проверить',
         fa: 'بررسی',
         ur: 'چیک',
-        tl: 'Suriin'
+        tl: 'Suriin',
+        ka: 'შემოწმება'
     },
     'Generated by Zperiod': {
         'zh-Hant': '由 Zperiod 生成',
@@ -289,7 +308,8 @@ const WORKSHEET_PHRASE_MAP = {
         ru: 'Сгенерировано в Zperiod',
         fa: 'تولید شده توسط Zperiod',
         ur: 'Zperiod کی جانب سے تیار کردہ',
-        tl: 'Nabuo ng Zperiod'
+        tl: 'Nabuo ng Zperiod',
+        ka: 'შექმნილია Zperiod-ით'
     }
 };
 
@@ -827,7 +847,7 @@ function exportToPDF() {
             padding: 0;
             width: 100%;
             height: 100%;
-            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            font-family: 'Inter', 'Zperiod Georgian', 'Noto Sans Georgian', system-ui, -apple-system, sans-serif;
             line-height: applied;
         }
 

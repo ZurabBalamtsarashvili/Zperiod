@@ -39,6 +39,7 @@ body {
   color: var(--text-primary);
   font-family:
     "Inter",
+    "Zperiod Georgian", "Noto Sans Georgian",
     -apple-system,
     sans-serif;
   /* Use 100dvh so Safari address bar does not cause jumping layout */

@@ -227,7 +227,7 @@ html[lang|="zh"] .ions-table-page .element .name.name-short {
 }
 
 .ion-formation-text {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Zperiod Georgian", "Noto Sans Georgian", sans-serif;
   font-size: 1.1rem;
   font-weight: 600;
   color: var(--text-primary);
@@ -879,7 +879,7 @@ html[lang|="zh"] .ions-table-page .element .name.name-short {
   font-size: 1.5rem;
   font-weight: 800;
   color: var(--text-primary);
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Zperiod Georgian", "Noto Sans Georgian", sans-serif;
 }
 
 .formula-value.highlight {

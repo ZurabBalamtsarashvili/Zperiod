@@ -1,12 +1,14 @@
 // =============================================================================
-// Language Controller — global i18n for EN / ZH / ZH-HANT / FR / RU / FA / UR / TL
+// Language Controller — global i18n for EN / ZH / ZH-HANT / FR / RU / FA / UR / TL / KA
 // =============================================================================
 
 import { translations } from "../data/translations.js";
 
 const STORAGE_KEY = "zperiod_lang";
-const SUPPORTED = ["en", "zh", "zh-Hant", "fr", "ru", "fa", "ur", "tl"];
-const DEFAULT = "en";
+const SUPPORTED = ["en", "zh", "zh-Hant", "fr", "ru", "fa", "ur", "tl", "ka"];
+const DEFAULT = "ka";
+// Strings missing from the active locale fall back to English.
+const FALLBACK = "en";
 
 let lang = DEFAULT;
 let callbacks = [];
@@ -44,6 +46,10 @@ const ELEMENT_LOCALE_LOADERS = {
     const module = await import("../data/locales/tl.js");
     return module.tl_elements;
   },
+  ka: async () => {
+    const module = await import("../data/locales/ka.js");
+    return module.ka_elements;
+  },
 };
 
 const ION_LOCALE_LOADERS = {
@@ -74,6 +80,10 @@ const ION_LOCALE_LOADERS = {
   tl: async () => {
     const module = await import("../data/locales/ions/tl.js");
     return module.tl_ions;
+  },
+  ka: async () => {
+    const module = await import("../data/locales/ions/ka.js");
+    return module.ka_ions;
   },
 };
 
@@ -138,7 +148,7 @@ export function t(key, fallback, targetLang) {
   }
   if (val != null) return val;
 
-  let fb = translations[DEFAULT];
+  let fb = translations[FALLBACK];
   for (const p of parts) {
     if (fb == null) return fallback !== undefined ? fallback : key;
     fb = fb[p];

@@ -1723,7 +1723,7 @@ function generateEmpiricalToolContent() {
                 --accent-purple: #af52de;
                 --accent-green: #30d158;
                 --surface-elevated: rgba(255, 255, 255, 0.9);
-                font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif;
+                font-family: 'Inter', 'Zperiod Georgian', 'Noto Sans Georgian', -apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif;
                 display: flex;
                 flex-direction: column;
                 min-height: 100%;
@@ -2236,7 +2236,7 @@ function generateSolubilityToolContent() {
                 --text-secondary: #86868b;
                 --accent-green: #10b981;
 
-                font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif;
+                font-family: 'Inter', 'Zperiod Georgian', 'Noto Sans Georgian', -apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif;
                 display: flex;
                 flex-direction: column;
                 flex: 1;

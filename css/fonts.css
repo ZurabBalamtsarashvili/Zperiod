@@ -1,0 +1,49 @@
+/* =========================================
+   fonts.css — Georgian typeface (Mark GEO)
+   Covers only Georgian code points, so Latin/Cyrillic/CJK text keeps Inter.
+   Uses a locally installed Mark GEO first, then self-hosted files in /fonts
+   (fonts/MarkGEO-Regular.woff2, -Medium.woff2, -Bold.woff2), then falls
+   back to Noto Sans Georgian from Google Fonts.
+   ========================================= */
+
+@font-face {
+  font-family: "Zperiod Georgian";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src:
+    local("Mark GEO Regular"),
+    local("MarkGEO-Regular"),
+    url("../fonts/MarkGEO-Regular.woff2") format("woff2"),
+    url("../fonts/MarkGEO-Regular.woff") format("woff"),
+    url("../fonts/MarkGEO-Regular.otf") format("opentype");
+  unicode-range: U+10A0-10FF, U+1C90-1CBF, U+2D00-2D2F;
+}
+
+@font-face {
+  font-family: "Zperiod Georgian";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src:
+    local("Mark GEO Medium"),
+    local("MarkGEO-Medium"),
+    url("../fonts/MarkGEO-Medium.woff2") format("woff2"),
+    url("../fonts/MarkGEO-Medium.woff") format("woff"),
+    url("../fonts/MarkGEO-Medium.otf") format("opentype");
+  unicode-range: U+10A0-10FF, U+1C90-1CBF, U+2D00-2D2F;
+}
+
+@font-face {
+  font-family: "Zperiod Georgian";
+  font-style: normal;
+  font-weight: 600 700;
+  font-display: swap;
+  src:
+    local("Mark GEO Bold"),
+    local("MarkGEO-Bold"),
+    url("../fonts/MarkGEO-Bold.woff2") format("woff2"),
+    url("../fonts/MarkGEO-Bold.woff") format("woff"),
+    url("../fonts/MarkGEO-Bold.otf") format("opentype");
+  unicode-range: U+10A0-10FF, U+1C90-1CBF, U+2D00-2D2F;
+}

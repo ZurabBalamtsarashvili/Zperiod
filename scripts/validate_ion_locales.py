@@ -18,6 +18,7 @@ LOCALES = {
     "fa": ("fa.js", "fa_ions"),
     "ur": ("ur.js", "ur_ions"),
     "tl": ("tl.js", "tl_ions"),
+    "ka": ("ka.js", "ka_ions"),
 }
 
 

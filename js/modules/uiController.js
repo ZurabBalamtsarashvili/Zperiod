@@ -254,6 +254,7 @@ function localizeNoAdditionalData() {
   if (lang.startsWith("fa")) return "اطلاعات تکمیلی موجود نیست.";
   if (lang.startsWith("ur")) return "مزید تفصیلی معلومات دستیاب نہیں۔";
   if (lang.startsWith("tl")) return "Wala pang karagdagang detalye.";
+  if (lang.startsWith("ka")) return "დამატებითი მონაცემები არ არის ხელმისაწვდომი.";
   return "No additional data available.";
 }
 
@@ -275,6 +276,9 @@ function buildLocalizedCommonIonNote(element, symbol) {
   }
   if (lang.startsWith("tl")) {
     return `${symbol} ay isang karaniwang ion ng ${localizedName} sa mga karaniwang compound nito.`;
+  }
+  if (lang.startsWith("ka")) {
+    return `${symbol} — ${localizedName}-ის გავრცელებული იონი მის ჩვეულებრივ ნაერთებში.`;
   }
   return `${symbol} is a common ion of ${element.name} in its usual compounds.`;
 }
@@ -434,6 +438,23 @@ function localizeValence(val) {
       .replace(/subshell/gi, "subshell")
       .replace(/outer/gi, "panlabas");
   }
+  if (lang === "ka") {
+    return String(val)
+      .replace(/Variable \(outer s \+ d \+ f\)/i, "ცვალებადი (გარე s + d + f)")
+      .replace(/Variable \(outer s \+ d\)/i, "ცვალებადი (გარე s + d)")
+      .replace(/Variable \(outer s \+ f\)/i, "ცვალებადი (გარე s + f)")
+      .replace(/Variable \(outer d only here\)/i, "ცვალებადი (აქ მხოლოდ გარე d)")
+      .replace(/Variable/i, "ცვალებადი")
+      .replace(/\(d-subshell is full\)/gi, "(d-ქვეშრე შევსებულია)")
+      .replace(/\(s-subshell only\)/gi, "(მხოლოდ s-ქვეშრე)")
+      .replace(/\(f-subshell filling\)/gi, "(f-ქვეშრე ივსება)")
+      .replace(/\(half-filled d\)/gi, "(ნახევრად შევსებული d)")
+      .replace(/\(full d before s\)/gi, "(d შევსებულია s-მდე)")
+      .replace(/\(d-subshell\)/gi, "(d-ქვეშრე)")
+      .replace(/\(acts like 1\)/gi, "(იქცევა როგორც 1)")
+      .replace(/subshell/gi, "ქვეშრე")
+      .replace(/outer/gi, "გარე");
+  }
   return val;
 }
 
@@ -446,6 +467,7 @@ function localizeNA() {
   if (lang.startsWith("fa")) return "ناموجود";
   if (lang.startsWith("ur")) return "دستیاب نہیں";
   if (lang.startsWith("tl")) return "Wala";
+  if (lang.startsWith("ka")) return "არ არის";
   return "N/A";
 }
 
@@ -562,6 +584,14 @@ function buildIsotopeFallbackNote(element, isotope) {
     if (isRadioactive && /trace/i.test(percentText)) return "Radyoaktibong isotope na matatagpuan lamang sa bakas na dami sa kalikasan.";
     if (isRadioactive && abundance) return `Radyoaktibong isotope ng ${localizeElementName(element)}; likas na kasaganaan ${abundance}.`;
     if (isRadioactive) return `Radyoaktibong isotope ng ${localizeElementName(element)}.`;
+    return localizeNoAdditionalData();
+  }
+  if (lang.startsWith("ka")) {
+    if (isStable && abundance) return `${localizeElementName(element)}-ის სტაბილური იზოტოპი; ბუნებრივი გავრცელება ${abundance}.`;
+    if (isStable) return `${localizeElementName(element)}-ის სტაბილური იზოტოპი.`;
+    if (isRadioactive && /trace/i.test(percentText)) return "რადიოაქტიური იზოტოპი, რომელიც ბუნებაში მხოლოდ კვალის რაოდენობით გვხვდება.";
+    if (isRadioactive && abundance) return `${localizeElementName(element)}-ის რადიოაქტიური იზოტოპი; ბუნებრივი გავრცელება ${abundance}.`;
+    if (isRadioactive) return `${localizeElementName(element)}-ის რადიოაქტიური იზოტოპი.`;
     return localizeNoAdditionalData();
   }
 
@@ -800,7 +830,7 @@ function measureLegendTextWidth(text) {
   const ctx = legendMeasureCanvas.getContext("2d");
   if (!ctx) return 0;
   ctx.font =
-    '600 11px "Inter", "PingFang SC", "Noto Sans SC", "Microsoft YaHei", sans-serif';
+    '600 11px "Inter", "Zperiod Georgian", "Noto Sans Georgian", "PingFang SC", "Noto Sans SC", "Microsoft YaHei", sans-serif';
   return Math.ceil(ctx.measureText(String(text || "")).width);
 }
 
@@ -2122,6 +2152,10 @@ function populateSimplifiedView(element) {
     let year = finallyElementData.level4_history_stse?.history?.discoveryYear || "—";
     if (window.zperiodVersion === 'new' && v2Data && v2Data.level4_history_stse.history.discoveryYear) {
       year = v2Data.level4_history_stse.history.discoveryYear;
+    }
+    const yearLocale = elementLocales[getLang()]?.[element.number]?.history;
+    if (yearLocale?.discoveryYear) {
+      year = yearLocale.discoveryYear;
     }
 
     setText("#el-modal-l4-year", year);

@@ -19,7 +19,7 @@ export function initOnboardingFlow() {
         align-items: center;
         justify-content: center;
         overflow: hidden;
-        font-family: 'Inter', -apple-system, sans-serif;
+        font-family: 'Inter', 'Zperiod Georgian', 'Noto Sans Georgian', -apple-system, sans-serif;
       }
 
       .logo-container {
@@ -196,13 +196,13 @@ export function initOnboardingFlow() {
         </div>
         
         <div class="start-btn-container" id="start-btn-box">
-          <button class="onboarding-btn" id="onboarding-start-btn">Start</button>
+          <button class="onboarding-btn" id="onboarding-start-btn">${t("onboarding.start", "Start")}</button>
         </div>
     </div>
 
     <div class="lang-selection" id="lang-select-screen">
-      <h2 style="font-size: 2.5rem; color: #1e293b; margin-bottom: 0px; font-weight: 800; letter-spacing: -1px;">Select Language</h2>
-      <p style="color: #64748b; margin-bottom: 20px; font-size: 1.1rem;">Choose your preferred language to continue</p>
+      <h2 style="font-size: 2.5rem; color: #1e293b; margin-bottom: 0px; font-weight: 800; letter-spacing: -1px;">${t("onboarding.selectLanguage", "Select Language")}</h2>
+      <p style="color: #64748b; margin-bottom: 20px; font-size: 1.1rem;">${t("onboarding.chooseLanguage", "Choose your preferred language to continue")}</p>
       <div class="lang-grid">
         <button class="lang-btn" data-lang="en">English</button>
         <button class="lang-btn" data-lang="zh">简体中文</button>
@@ -212,6 +212,7 @@ export function initOnboardingFlow() {
         <button class="lang-btn" data-lang="fa">فارسی</button>
         <button class="lang-btn" data-lang="ur">اردو</button>
         <button class="lang-btn" data-lang="tl">Tagalog</button>
+        <button class="lang-btn" data-lang="ka">ქართული</button>
       </div>
     </div>
   `;
@@ -237,7 +238,7 @@ export function initOnboardingFlow() {
   }, 1600);
 
   function startDanmaku() {
-    const supportedLangs = ["en", "zh", "zh-Hant", "fr", "ru", "fa", "ur", "tl"];
+    const supportedLangs = ["en", "zh", "zh-Hant", "fr", "ru", "fa", "ur", "tl", "ka"];
     const allPhrases = [];
     supportedLangs.forEach(l => {
         const phrases = t(`onboarding.phrases`, [], l);

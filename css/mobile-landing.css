@@ -77,7 +77,7 @@
 }
 
 .rotate-device-title {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif;
+  font-family: 'Inter', 'Zperiod Georgian', 'Noto Sans Georgian', -apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif;
   font-size: 1.6rem;
   font-weight: 700;
   color: #1d1d1f;
@@ -86,7 +86,7 @@
 }
 
 .rotate-device-text {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif;
+  font-family: 'Inter', 'Zperiod Georgian', 'Noto Sans Georgian', -apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif;
   font-size: 0.95rem;
   color: #86868b;
   line-height: 1.6;
@@ -147,7 +147,7 @@ body.is-desktop .desktop-only-overlay {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif;
+  font-family: 'Inter', 'Zperiod Georgian', 'Noto Sans Georgian', -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif;
   color: #1d1d1f;
   -webkit-font-smoothing: antialiased;
 }

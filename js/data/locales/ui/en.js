@@ -712,7 +712,9 @@ export const enUI = {
       "Master the Elements",
       "Molecular Wonders"
     ],
-    "start": "Start"
+    "start": "Start",
+    "selectLanguage": "Select Language",
+    "chooseLanguage": "Choose your preferred language to continue"
   },
   "discord": {
     "join": "Join Discord",
