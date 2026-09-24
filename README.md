@@ -14,6 +14,11 @@
 
 ---
 
+> [!NOTE]
+> This repository contains the open-source legacy version of Zperiod. The current product is available at [zperiod.app](https://zperiod.app) and may differ significantly from this codebase.
+
+---
+
 ## ✨ Features
 
 ### 🔬 Interactive Periodic Table
@@ -193,9 +198,7 @@ Zperiod follows modern design principles:
 
 ## 🛡️ License
 
-© 2026 Philip. All rights reserved.
-
-This project is created for educational purposes. Unauthorized copying, modification, or redistribution without explicit permission is prohibited.
+This project is open source under the [MIT License](LICENSE).
 
 ---
 
