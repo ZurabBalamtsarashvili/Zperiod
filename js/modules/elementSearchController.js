@@ -32,6 +32,18 @@ function getCategoryColors(category) {
   return CATEGORY_COLORS[category.toLowerCase()] || ["#e0e0e0", "#666"];
 }
 
+function localizeCategory(category) {
+  if (!category) return t("elementL1.unknown");
+  const camel = category
+    .replace(/[- ](.)/g, (_, c) => c.toUpperCase())
+    .replace(/^(.)/, (c) => c.toLowerCase());
+  for (const key of [camel, camel.replace(/Metal$/, "")]) {
+    const label = t(`tableLegend.${key}`, "");
+    if (label) return label;
+  }
+  return category;
+}
+
 function normalizeSearchText(value) {
   return String(value || "")
     .normalize("NFKD")
@@ -159,7 +171,7 @@ export function initElementSearch({ showPage, updateGlobalNavActive } = {}) {
         </div>
         <div class="element-search-item-info">
           <div class="element-search-item-name">${highlightMatch(r.displayName, query)}</div>
-          <div class="element-search-item-detail">${r.element.category || "Unknown"}</div>
+          <div class="element-search-item-detail">${localizeCategory(r.element.category)}</div>
         </div>
       </div>`;
       })

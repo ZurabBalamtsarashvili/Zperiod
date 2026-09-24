@@ -28,6 +28,16 @@ export function isDarkTheme() {
   return document.documentElement.classList.contains(DARK_CLASS);
 }
 
+let switchTimer = null;
+
+// Cross-fade colours briefly when the user flips the theme (not on load).
+function animateThemeSwitch() {
+  const root = document.documentElement;
+  root.classList.add("theme-switching");
+  clearTimeout(switchTimer);
+  switchTimer = setTimeout(() => root.classList.remove("theme-switching"), 400);
+}
+
 function applyTheme(pref = getThemePreference()) {
   const dark = pref === "dark" || (pref === "auto" && media.matches);
   const root = document.documentElement;
@@ -45,6 +55,7 @@ function applyTheme(pref = getThemePreference()) {
 
 export function setThemePreference(pref) {
   if (!THEMES.includes(pref)) return;
+  animateThemeSwitch();
   try {
     localStorage.setItem(STORAGE_KEY, pref);
   } catch {
@@ -143,7 +154,10 @@ export function initThemeController() {
   applyTheme();
   watchInjectedStyles();
   media.addEventListener("change", () => {
-    if (getThemePreference() === "auto") applyTheme("auto");
+    if (getThemePreference() === "auto") {
+      animateThemeSwitch();
+      applyTheme("auto");
+    }
   });
   document.querySelectorAll(".sv-theme-btn").forEach((btn) => {
     btn.addEventListener("click", () => setThemePreference(btn.dataset.themeValue));

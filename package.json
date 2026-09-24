@@ -9,6 +9,7 @@
     "lint": "eslint . --ext .js --cache --cache-location .eslintcache --quiet",
     "check:syntax": "find . -name '*.js' -not -path './node_modules/*' -not -path './dist/*' -not -path './public/*' -print0 | xargs -0 -n1 node --check",
     "audit:i18n": "node scripts/audit_translation_fallbacks.mjs",
+    "build:theme": "node scripts/build_dark_theme.mjs",
     "validate:ions": "python3 scripts/validate_ion_locales.py",
     "check": "npm run lint && npm run check:syntax && npm run build",
     "smoke": "playwright test",

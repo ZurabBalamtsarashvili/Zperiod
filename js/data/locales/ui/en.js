@@ -119,7 +119,8 @@ export const enUI = {
     "practice": "Practice",
     "answerKey": "Answer Key",
     "today": "Today",
-    "placeholder": "Click 'Generate Worksheet' to create practice problems"
+    "placeholder": "Click 'Generate Worksheet' to create practice problems",
+    "combustionFormula": "Hydrocarbon + O₂"
   },
   "settings": {
     "electronAnimation": "Electron Animation",
@@ -217,7 +218,8 @@ export const enUI = {
   },
   "common": {
     "clickToChangeUnit": "Click to change unit",
-    "optional": "Optional"
+    "optional": "Optional",
+    "rightsReserved": "All rights reserved."
   },
   "balancer": {
     "title": "Equation Balancer",
@@ -420,7 +422,22 @@ export const enUI = {
     "reasonHydroxideGroup2": "Group 2 Hydroxides (Ca/Sr/Ba) are slightly soluble.",
     "reasonHydroxideGeneral": "Most Hydroxides are insoluble.",
     "reasonCarbonatePhosphateSulfide": "Carbonates/Phosphates/Sulfides are generally insoluble.",
-    "checkInputAgain": "Check input and try again"
+    "checkInputAgain": "Check input and try again",
+    "anionNitrate": "Nitrate",
+    "anionAcetate": "Acetate",
+    "anionHalides": "Halides",
+    "anionSulfate": "Sulfate",
+    "anionHydroxide": "Hydroxide",
+    "anionCarbonate": "Carbonate",
+    "anionPhosphate": "Phosphate",
+    "anionSulfide": "Sulfide",
+    "pillSoluble": "Soluble",
+    "pillSol": "Sol.",
+    "pillInsol": "Insol.",
+    "alwaysSoluble": "None — always soluble",
+    "group1": "Group 1",
+    "group2": "Group 2",
+    "slightly": "slightly"
   },
   "chemTools": {
     "zeroAsFormula": "\"{formula}\" is not a valid formula — did you type 0 (zero) instead of O (oxygen)? Try \"{suggestion}\".",

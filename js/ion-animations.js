@@ -3,6 +3,17 @@
  * 20 Unique Animation Types with HTML Templates
  */
 
+// pH bar captions are plain English in the configs below; localize the few
+// that appear for Georgian.
+const PH_LABELS = {
+    ka: { Acidic: 'მჟავა', Basic: 'ფუძე', Buffer: 'ბუფერი', 'Weak Acid': 'სუსტი მჟავა', 'pH Shift': 'pH-ის ცვლა' },
+};
+
+function localizePhLabel(label) {
+    const lang = document.documentElement.lang;
+    return PH_LABELS[lang]?.[label] || label;
+}
+
 const IonAnimations = {
 
     // ===== 20 Animation Types =====
@@ -18,7 +29,7 @@ const IonAnimations = {
             <div class="ph-bar">
                 <div class="ph-pointer" style="--ph-pos: ${config.start || '10%'}; --ph-hover: ${config.end || '90%'};"></div>
             </div>
-            <span class="ph-label">${config.label || 'pH'}</span>
+            <span class="ph-label">${localizePhLabel(config.label || 'pH')}</span>
         </div>
     `,
 

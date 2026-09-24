@@ -119,7 +119,8 @@ export const kaUI = {
     "practice": "ვარჯიში",
     "answerKey": "პასუხები",
     "today": "დღეს",
-    "placeholder": "დააჭირეთ „ფურცლის შექმნას“ სავარჯიშოების მისაღებად"
+    "placeholder": "დააჭირეთ „ფურცლის შექმნას“ სავარჯიშოების მისაღებად",
+    "combustionFormula": "ნახშირწყალბადი + O₂"
   },
   "settings": {
     "electronAnimation": "ელექტრონების ანიმაცია",
@@ -217,7 +218,8 @@ export const kaUI = {
   },
   "common": {
     "clickToChangeUnit": "დააჭირეთ ერთეულის შესაცვლელად",
-    "optional": "არასავალდებულო"
+    "optional": "არასავალდებულო",
+    "rightsReserved": "ყველა უფლება დაცულია."
   },
   "balancer": {
     "title": "განტოლებების გამთანაბრებელი",
@@ -421,7 +423,22 @@ export const kaUI = {
     "reasonHydroxideGroup2": "მე-2 ჯგუფის ჰიდროქსიდები (Ca/Sr/Ba) მცირედ ხსნადია.",
     "reasonHydroxideGeneral": "ჰიდროქსიდების უმეტესობა უხსნადია.",
     "reasonCarbonatePhosphateSulfide": "კარბონატები/ფოსფატები/სულფიდები ძირითადად უხსნადია.",
-    "checkInputAgain": "შეამოწმეთ შეყვანილი მონაცემები და სცადეთ ხელახლა"
+    "checkInputAgain": "შეამოწმეთ შეყვანილი მონაცემები და სცადეთ ხელახლა",
+    "anionNitrate": "ნიტრატი",
+    "anionAcetate": "აცეტატი",
+    "anionHalides": "ჰალოგენიდები",
+    "anionSulfate": "სულფატი",
+    "anionHydroxide": "ჰიდროქსიდი",
+    "anionCarbonate": "კარბონატი",
+    "anionPhosphate": "ფოსფატი",
+    "anionSulfide": "სულფიდი",
+    "pillSoluble": "ხსნადი",
+    "pillSol": "ხსნ.",
+    "pillInsol": "უხსნ.",
+    "alwaysSoluble": "არ აქვს — ყოველთვის ხსნადი",
+    "group1": "1-ლი ჯგუფი",
+    "group2": "მე-2 ჯგუფი",
+    "slightly": "მცირედ"
   },
   "chemTools": {
     "zeroAsFormula": "„{formula}“ არასწორი ფორმულაა — ხომ არ აკრიფეთ 0 (ნული) O-ს (ჟანგბადის) ნაცვლად? სცადეთ „{suggestion}“.",

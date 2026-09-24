@@ -3402,44 +3402,44 @@ function generateSolubilityToolContent() {
                     <table class="sol-glass-table">
                         <tbody>
                             <tr>
-                                <td><span class="sol-anion-name"><span class="sol-ion"><span class="sol-ion-base">NO</span><span class="sol-ion-scripts"><span class="sup">−</span><span class="sub">3</span></span></span></span><span class="sol-anion-label">Nitrate</span></td>
-                                <td><span class="sol-pill sol-pill-soluble">Soluble</span></td>
-                                <td class="sol-exception-text">None — always soluble</td>
+                                <td><span class="sol-anion-name"><span class="sol-ion"><span class="sol-ion-base">NO</span><span class="sol-ion-scripts"><span class="sup">−</span><span class="sub">3</span></span></span></span><span class="sol-anion-label">${t("solubility.anionNitrate", "Nitrate")}</span></td>
+                                <td><span class="sol-pill sol-pill-soluble">${t("solubility.pillSoluble", "Soluble")}</span></td>
+                                <td class="sol-exception-text">${t("solubility.alwaysSoluble", "None — always soluble")}</td>
                             </tr>
                             <tr>
-                                <td><span class="sol-anion-name">CH<sub>3</sub>COO<sup class="sol-sup-high">−</sup></span><span class="sol-anion-label">Acetate</span></td>
-                                <td><span class="sol-pill sol-pill-soluble">Soluble</span></td>
-                                <td class="sol-exception-text">None — always soluble</td>
+                                <td><span class="sol-anion-name">CH<sub>3</sub>COO<sup class="sol-sup-high">−</sup></span><span class="sol-anion-label">${t("solubility.anionAcetate", "Acetate")}</span></td>
+                                <td><span class="sol-pill sol-pill-soluble">${t("solubility.pillSoluble", "Soluble")}</span></td>
+                                <td class="sol-exception-text">${t("solubility.alwaysSoluble", "None — always soluble")}</td>
                             </tr>
                             <tr>
-                                <td><span class="sol-anion-name">Cl<sup class="sol-sup-high">−</sup>, Br<sup class="sol-sup-high">−</sup>, I<sup class="sol-sup-high">−</sup></span><span class="sol-anion-label">Halides</span></td>
-                                <td><span class="sol-pill sol-pill-soluble">Soluble</span></td>
-                                <td class="sol-exception-text">Ag<sup>+</sup>, Pb<sup>2+</sup>, <span class="sol-ion"><span class="sol-ion-base">Hg</span><span class="sol-ion-scripts"><span class="sup">2+</span><span class="sub">2</span></span></span> <span class="sol-pill sol-pill-insoluble">Insol.</span></td>
+                                <td><span class="sol-anion-name">Cl<sup class="sol-sup-high">−</sup>, Br<sup class="sol-sup-high">−</sup>, I<sup class="sol-sup-high">−</sup></span><span class="sol-anion-label">${t("solubility.anionHalides", "Halides")}</span></td>
+                                <td><span class="sol-pill sol-pill-soluble">${t("solubility.pillSoluble", "Soluble")}</span></td>
+                                <td class="sol-exception-text">Ag<sup>+</sup>, Pb<sup>2+</sup>, <span class="sol-ion"><span class="sol-ion-base">Hg</span><span class="sol-ion-scripts"><span class="sup">2+</span><span class="sub">2</span></span></span> <span class="sol-pill sol-pill-insoluble">${t("solubility.pillInsol", "Insol.")}</span></td>
                             </tr>
                             <tr>
-                                <td><span class="sol-anion-name"><span class="sol-ion"><span class="sol-ion-base">SO</span><span class="sol-ion-scripts"><span class="sup">2−</span><span class="sub">4</span></span></span></span><span class="sol-anion-label">Sulfate</span></td>
-                                <td><span class="sol-pill sol-pill-soluble">Soluble</span></td>
-                                <td class="sol-exception-text">Ba<sup>2+</sup>, Pb<sup>2+</sup>, Ca<sup>2+</sup>, Sr<sup>2+</sup> <span class="sol-pill sol-pill-insoluble">Insol.</span></td>
+                                <td><span class="sol-anion-name"><span class="sol-ion"><span class="sol-ion-base">SO</span><span class="sol-ion-scripts"><span class="sup">2−</span><span class="sub">4</span></span></span></span><span class="sol-anion-label">${t("solubility.anionSulfate", "Sulfate")}</span></td>
+                                <td><span class="sol-pill sol-pill-soluble">${t("solubility.pillSoluble", "Soluble")}</span></td>
+                                <td class="sol-exception-text">Ba<sup>2+</sup>, Pb<sup>2+</sup>, Ca<sup>2+</sup>, Sr<sup>2+</sup> <span class="sol-pill sol-pill-insoluble">${t("solubility.pillInsol", "Insol.")}</span></td>
                             </tr>
                             <tr>
-                                <td><span class="sol-anion-name">OH<sup class="sol-sup-high">−</sup></span><span class="sol-anion-label">Hydroxide</span></td>
-                                <td><span class="sol-pill sol-pill-insoluble">Insol.</span></td>
-                                <td class="sol-exception-text">Group 1, <span class="sol-ion"><span class="sol-ion-base">NH</span><span class="sol-ion-scripts"><span class="sup">+</span><span class="sub">4</span></span></span> <span class="sol-pill sol-pill-soluble">Sol.</span> Ca<sup>2+</sup>, Ba<sup>2+</sup>, Sr<sup>2+</sup> slightly</td>
+                                <td><span class="sol-anion-name">OH<sup class="sol-sup-high">−</sup></span><span class="sol-anion-label">${t("solubility.anionHydroxide", "Hydroxide")}</span></td>
+                                <td><span class="sol-pill sol-pill-insoluble">${t("solubility.pillInsol", "Insol.")}</span></td>
+                                <td class="sol-exception-text">${t("solubility.group1", "Group 1")}, <span class="sol-ion"><span class="sol-ion-base">NH</span><span class="sol-ion-scripts"><span class="sup">+</span><span class="sub">4</span></span></span> <span class="sol-pill sol-pill-soluble">${t("solubility.pillSol", "Sol.")}</span> Ca<sup>2+</sup>, Ba<sup>2+</sup>, Sr<sup>2+</sup> ${t("solubility.slightly", "slightly")}</td>
                             </tr>
                             <tr>
-                                <td><span class="sol-anion-name"><span class="sol-ion"><span class="sol-ion-base">CO</span><span class="sol-ion-scripts"><span class="sup">2−</span><span class="sub">3</span></span></span></span><span class="sol-anion-label">Carbonate</span></td>
-                                <td><span class="sol-pill sol-pill-insoluble">Insol.</span></td>
-                                <td class="sol-exception-text">Group 1, <span class="sol-ion"><span class="sol-ion-base">NH</span><span class="sol-ion-scripts"><span class="sup">+</sup><span class="sub">4</span></span></span> <span class="sol-pill sol-pill-soluble">Soluble</span></td>
+                                <td><span class="sol-anion-name"><span class="sol-ion"><span class="sol-ion-base">CO</span><span class="sol-ion-scripts"><span class="sup">2−</span><span class="sub">3</span></span></span></span><span class="sol-anion-label">${t("solubility.anionCarbonate", "Carbonate")}</span></td>
+                                <td><span class="sol-pill sol-pill-insoluble">${t("solubility.pillInsol", "Insol.")}</span></td>
+                                <td class="sol-exception-text">${t("solubility.group1", "Group 1")}, <span class="sol-ion"><span class="sol-ion-base">NH</span><span class="sol-ion-scripts"><span class="sup">+</span><span class="sub">4</span></span></span> <span class="sol-pill sol-pill-soluble">${t("solubility.pillSoluble", "Soluble")}</span></td>
                             </tr>
                             <tr>
-                                <td><span class="sol-anion-name"><span class="sol-ion"><span class="sol-ion-base">PO</span><span class="sol-ion-scripts"><span class="sup">3−</span><span class="sub">4</span></span></span></span><span class="sol-anion-label">Phosphate</span></td>
-                                <td><span class="sol-pill sol-pill-insoluble">Insol.</span></td>
-                                <td class="sol-exception-text">Group 1, <span class="sol-ion"><span class="sol-ion-base">NH</span><span class="sol-ion-scripts"><span class="sup">+</span><span class="sub">4</span></span></span> <span class="sol-pill sol-pill-soluble">Soluble</span></td>
+                                <td><span class="sol-anion-name"><span class="sol-ion"><span class="sol-ion-base">PO</span><span class="sol-ion-scripts"><span class="sup">3−</span><span class="sub">4</span></span></span></span><span class="sol-anion-label">${t("solubility.anionPhosphate", "Phosphate")}</span></td>
+                                <td><span class="sol-pill sol-pill-insoluble">${t("solubility.pillInsol", "Insol.")}</span></td>
+                                <td class="sol-exception-text">${t("solubility.group1", "Group 1")}, <span class="sol-ion"><span class="sol-ion-base">NH</span><span class="sol-ion-scripts"><span class="sup">+</span><span class="sub">4</span></span></span> <span class="sol-pill sol-pill-soluble">${t("solubility.pillSoluble", "Soluble")}</span></td>
                             </tr>
                             <tr>
-                                <td><span class="sol-anion-name">S<sup class="sol-sup-high">2−</sup></span><span class="sol-anion-label">Sulfide</span></td>
-                                <td><span class="sol-pill sol-pill-insoluble">Insol.</span></td>
-                                <td class="sol-exception-text">Group 1, Group 2, <span class="sol-ion"><span class="sol-ion-base">NH</span><span class="sol-ion-scripts"><span class="sup">+</span><span class="sub">4</span></span></span> <span class="sol-pill sol-pill-soluble">Sol.</span></td>
+                                <td><span class="sol-anion-name">S<sup class="sol-sup-high">2−</sup></span><span class="sol-anion-label">${t("solubility.anionSulfide", "Sulfide")}</span></td>
+                                <td><span class="sol-pill sol-pill-insoluble">${t("solubility.pillInsol", "Insol.")}</span></td>
+                                <td class="sol-exception-text">${t("solubility.group1", "Group 1")}, ${t("solubility.group2", "Group 2")}, <span class="sol-ion"><span class="sol-ion-base">NH</span><span class="sol-ion-scripts"><span class="sup">+</span><span class="sub">4</span></span></span> <span class="sol-pill sol-pill-soluble">${t("solubility.pillSol", "Sol.")}</span></td>
                             </tr>
                         </tbody>
                     </table>
