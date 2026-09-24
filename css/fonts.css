@@ -1,10 +1,17 @@
 /* =========================================
-   fonts.css — Georgian typeface (Mark GEO)
-   Covers only Georgian code points, so Latin/Cyrillic/CJK text keeps Inter.
-   Uses a locally installed Mark GEO first, then self-hosted files in /fonts
-   (fonts/MarkGEO-Regular.woff2, -Medium.woff2, -Bold.woff2), then falls
-   back to Noto Sans Georgian from Google Fonts.
+   fonts.css — Georgian typefaces
+   Mark GEO       → body text, descriptions ("Zperiod Georgian")
+   Mark GEO CAPS  → headings, buttons, labels ("Zperiod Georgian Caps")
+   Both faces only cover Georgian code points, so Latin text, numbers and
+   chemical formulas keep Inter. Sources are tried in order: a locally
+   installed copy, then files in /fonts (see fonts/README.md), then the
+   Noto Sans Georgian fallback declared in the font stacks.
    ========================================= */
+
+:root {
+  --font-body: "Inter", "Zperiod Georgian", "Noto Sans Georgian", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-display: "Inter", "Zperiod Georgian Caps", "Zperiod Georgian", "Noto Sans Georgian", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
 
 @font-face {
   font-family: "Zperiod Georgian";
@@ -14,9 +21,12 @@
   src:
     local("Mark GEO Regular"),
     local("MarkGEO-Regular"),
+    local("Mark GEO Book"),
+    local("MarkGEO-Book"),
     url("../fonts/MarkGEO-Regular.woff2") format("woff2"),
     url("../fonts/MarkGEO-Regular.woff") format("woff"),
-    url("../fonts/MarkGEO-Regular.otf") format("opentype");
+    url("../fonts/MarkGEO-Regular.otf") format("opentype"),
+    url("../fonts/MarkGEO-Regular.ttf") format("truetype");
   unicode-range: U+10A0-10FF, U+1C90-1CBF, U+2D00-2D2F;
 }
 
@@ -30,20 +40,141 @@
     local("MarkGEO-Medium"),
     url("../fonts/MarkGEO-Medium.woff2") format("woff2"),
     url("../fonts/MarkGEO-Medium.woff") format("woff"),
-    url("../fonts/MarkGEO-Medium.otf") format("opentype");
+    url("../fonts/MarkGEO-Medium.otf") format("opentype"),
+    url("../fonts/MarkGEO-Medium.ttf") format("truetype");
   unicode-range: U+10A0-10FF, U+1C90-1CBF, U+2D00-2D2F;
 }
 
 @font-face {
   font-family: "Zperiod Georgian";
   font-style: normal;
-  font-weight: 600 700;
+  font-weight: 600;
+  font-display: swap;
+  src:
+    local("Mark GEO SemiBold"),
+    local("MarkGEO-SemiBold"),
+    local("Mark GEO Bold"),
+    local("MarkGEO-Bold"),
+    url("../fonts/MarkGEO-SemiBold.woff2") format("woff2"),
+    url("../fonts/MarkGEO-SemiBold.woff") format("woff"),
+    url("../fonts/MarkGEO-SemiBold.otf") format("opentype"),
+    url("../fonts/MarkGEO-SemiBold.ttf") format("truetype");
+  unicode-range: U+10A0-10FF, U+1C90-1CBF, U+2D00-2D2F;
+}
+
+@font-face {
+  font-family: "Zperiod Georgian";
+  font-style: normal;
+  font-weight: 700;
   font-display: swap;
   src:
     local("Mark GEO Bold"),
     local("MarkGEO-Bold"),
     url("../fonts/MarkGEO-Bold.woff2") format("woff2"),
     url("../fonts/MarkGEO-Bold.woff") format("woff"),
-    url("../fonts/MarkGEO-Bold.otf") format("opentype");
+    url("../fonts/MarkGEO-Bold.otf") format("opentype"),
+    url("../fonts/MarkGEO-Bold.ttf") format("truetype");
+  unicode-range: U+10A0-10FF, U+1C90-1CBF, U+2D00-2D2F;
+}
+
+@font-face {
+  font-family: "Zperiod Georgian";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src:
+    local("Mark GEO ExtraBold"),
+    local("MarkGEO-ExtraBold"),
+    local("Mark GEO Black"),
+    local("MarkGEO-Black"),
+    local("Mark GEO Bold"),
+    local("MarkGEO-Bold"),
+    url("../fonts/MarkGEO-ExtraBold.woff2") format("woff2"),
+    url("../fonts/MarkGEO-ExtraBold.woff") format("woff"),
+    url("../fonts/MarkGEO-ExtraBold.otf") format("opentype"),
+    url("../fonts/MarkGEO-ExtraBold.ttf") format("truetype");
+  unicode-range: U+10A0-10FF, U+1C90-1CBF, U+2D00-2D2F;
+}
+
+@font-face {
+  font-family: "Zperiod Georgian Caps";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src:
+    local("Mark GEO CAPS Regular"),
+    local("MarkGEOCAPS-Regular"),
+    local("Mark GEO CAPS Book"),
+    local("MarkGEOCAPS-Book"),
+    url("../fonts/MarkGEOCAPS-Regular.woff2") format("woff2"),
+    url("../fonts/MarkGEOCAPS-Regular.woff") format("woff"),
+    url("../fonts/MarkGEOCAPS-Regular.otf") format("opentype"),
+    url("../fonts/MarkGEOCAPS-Regular.ttf") format("truetype");
+  unicode-range: U+10A0-10FF, U+1C90-1CBF, U+2D00-2D2F;
+}
+
+@font-face {
+  font-family: "Zperiod Georgian Caps";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src:
+    local("Mark GEO CAPS Medium"),
+    local("MarkGEOCAPS-Medium"),
+    url("../fonts/MarkGEOCAPS-Medium.woff2") format("woff2"),
+    url("../fonts/MarkGEOCAPS-Medium.woff") format("woff"),
+    url("../fonts/MarkGEOCAPS-Medium.otf") format("opentype"),
+    url("../fonts/MarkGEOCAPS-Medium.ttf") format("truetype");
+  unicode-range: U+10A0-10FF, U+1C90-1CBF, U+2D00-2D2F;
+}
+
+@font-face {
+  font-family: "Zperiod Georgian Caps";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src:
+    local("Mark GEO CAPS SemiBold"),
+    local("MarkGEOCAPS-SemiBold"),
+    local("Mark GEO CAPS Bold"),
+    local("MarkGEOCAPS-Bold"),
+    url("../fonts/MarkGEOCAPS-SemiBold.woff2") format("woff2"),
+    url("../fonts/MarkGEOCAPS-SemiBold.woff") format("woff"),
+    url("../fonts/MarkGEOCAPS-SemiBold.otf") format("opentype"),
+    url("../fonts/MarkGEOCAPS-SemiBold.ttf") format("truetype");
+  unicode-range: U+10A0-10FF, U+1C90-1CBF, U+2D00-2D2F;
+}
+
+@font-face {
+  font-family: "Zperiod Georgian Caps";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src:
+    local("Mark GEO CAPS Bold"),
+    local("MarkGEOCAPS-Bold"),
+    url("../fonts/MarkGEOCAPS-Bold.woff2") format("woff2"),
+    url("../fonts/MarkGEOCAPS-Bold.woff") format("woff"),
+    url("../fonts/MarkGEOCAPS-Bold.otf") format("opentype"),
+    url("../fonts/MarkGEOCAPS-Bold.ttf") format("truetype");
+  unicode-range: U+10A0-10FF, U+1C90-1CBF, U+2D00-2D2F;
+}
+
+@font-face {
+  font-family: "Zperiod Georgian Caps";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src:
+    local("Mark GEO CAPS ExtraBold"),
+    local("MarkGEOCAPS-ExtraBold"),
+    local("Mark GEO CAPS Black"),
+    local("MarkGEOCAPS-Black"),
+    local("Mark GEO CAPS Bold"),
+    local("MarkGEOCAPS-Bold"),
+    url("../fonts/MarkGEOCAPS-ExtraBold.woff2") format("woff2"),
+    url("../fonts/MarkGEOCAPS-ExtraBold.woff") format("woff"),
+    url("../fonts/MarkGEOCAPS-ExtraBold.otf") format("opentype"),
+    url("../fonts/MarkGEOCAPS-ExtraBold.ttf") format("truetype");
   unicode-range: U+10A0-10FF, U+1C90-1CBF, U+2D00-2D2F;
 }

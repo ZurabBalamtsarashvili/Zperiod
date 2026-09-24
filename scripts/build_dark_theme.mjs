@@ -8,7 +8,7 @@ import { fileURLToPath } from "node:url";
 import { buildDarkOverrides } from "../js/modules/themeColors.js";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
-const SKIP = new Set(["css/fonts.css", "css/theme-dark.css", "css/theme-dark.generated.css"]);
+const SKIP = new Set(["css/fonts.css", "css/typography.css", "css/theme-dark.css", "css/theme-dark.generated.css"]);
 
 const html = fs.readFileSync(path.join(ROOT, "index.html"), "utf8");
 const sheets = [...html.matchAll(/<link[^>]+href="(css\/[^"?]+)[^"]*"[^>]*>/g)]

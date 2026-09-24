@@ -1,11 +1,14 @@
 # Fonts
 
-Self-hosted Georgian typeface used by `css/fonts.css`.
-Drop the licensed Mark GEO web font files here:
+Georgian typefaces used by `css/fonts.css`:
 
-- `MarkGEO-Regular.woff2` (400)
-- `MarkGEO-Medium.woff2` (500)
-- `MarkGEO-Bold.woff2` (600–700)
+| Role | Family | Files expected here |
+| --- | --- | --- |
+| Body text, descriptions | Mark GEO | `MarkGEO-Regular`, `MarkGEO-Medium`, `MarkGEO-SemiBold`, `MarkGEO-Bold`, `MarkGEO-ExtraBold` |
+| Headings, buttons, labels | Mark GEO CAPS | `MarkGEOCAPS-Regular`, `MarkGEOCAPS-Medium`, `MarkGEOCAPS-SemiBold`, `MarkGEOCAPS-Bold`, `MarkGEOCAPS-ExtraBold` |
 
-`.woff` / `.otf` with the same names also work. Until the files are present,
-visitors see Mark GEO only if it is installed locally, otherwise Noto Sans Georgian.
+Each file can be `.woff2` (preferred), `.woff`, `.otf` or `.ttf`. If your files
+are named differently, update the `url(...)` entries in `css/fonts.css`.
+
+Until the files are uploaded, visitors see Mark GEO only when it is installed
+on their computer; everyone else gets Noto Sans Georgian.

@@ -1,0 +1,117 @@
+/* =========================================
+   typography.css — font roles
+   Body text uses Mark GEO, headings/buttons/labels use Mark GEO CAPS (see
+   fonts.css). Mark GEO CAPS already draws capitals, so Georgian text gets
+   no CSS uppercase and no wide tracking meant for Latin capitals.
+   ========================================= */
+
+body {
+  font-family: var(--font-body);
+}
+
+html:lang(ka) :is(
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  button,
+  label,
+  th,
+  legend,
+  .nav-brand,
+  .nav-pill-btn,
+  .lang-option,
+  .feature-pill,
+  .sv-chip,
+  .welcome-eyebrow,
+  .welcome-cta,
+  [class*="title"],
+  [class*="btn"],
+  [class*="badge"]
+) {
+  font-family: var(--font-display);
+}
+
+/* Labels that the light design sets in tracked uppercase */
+html:lang(ka) :is(
+  .sv-version-tag,
+  .eit-chip-group-label,
+  .element-category,
+  .stat-label,
+  .section-label,
+  .ov-label,
+  .exam-label,
+  .prop-label,
+  .iso-tag,
+  .d-label,
+  .iso-title,
+  .edu-title,
+  .subatomic-stats-container h3,
+  .data-title,
+  .data-table th,
+  .card-title,
+  .info-label,
+  .l2-summary-label,
+  .l2-configuration-label,
+  .atomic-particle-lbl,
+  .prop-cell-label,
+  .glass-panel-title,
+  .l3-stat-label,
+  .l3-stat-ext,
+  .ox-legend-item,
+  .ion-isotope-stability,
+  .chem-tools-subtitle,
+  .grade-tag,
+  .feature-tag,
+  .tools-subtitle,
+  .tool-input-group label,
+  .tool-breakdown th,
+  .element-input-row label,
+  .features-subtitle,
+  .balanced-label,
+  .tool-input-section label,
+  .receipt-header,
+  .receipt-footer,
+  .molar-input-label,
+  .molar-tips-header,
+  .coming-soon-badge,
+  .breakdown-table th,
+  .check-table th,
+  .small-input,
+  .card-title-sm,
+  .h-plus-metric-label,
+  .visual-card-title,
+  .litmus-text,
+  .control-group > label,
+  .result-label,
+  .tool-tips-section h4,
+  .balancer-input-label,
+  .lego-group-label,
+  .ml-section-label,
+  .ml-feature-tag,
+  .ml-stat-label,
+  .atom-count-title,
+  .balancer-result-label,
+  .balancer-tips-title,
+  .predictor-result-label,
+  .virtual-lab-picker-group,
+  .virtual-lab-thermo-label,
+  .emp-section-label,
+  .emp-mol-mass-label,
+  .emp-optional-pill,
+  .emp-result-subtitle,
+  .emp-steps-content h4,
+  .sol-section-label,
+  .sol-glass-table th,
+  .sol-pill,
+  .sol-table-title
+) {
+  font-family: var(--font-display);
+  letter-spacing: 0.01em !important;
+}
+
+html:lang(ka) body * {
+  text-transform: none !important;
+}
