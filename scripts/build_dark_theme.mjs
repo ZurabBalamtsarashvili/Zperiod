@@ -3,6 +3,7 @@
 // index.html. Hand-tuned tweaks live in css/theme-dark.css, loaded after it.
 import fs from "node:fs";
 import path from "node:path";
+import process from "node:process";
 import { fileURLToPath } from "node:url";
 import { buildDarkOverrides } from "../js/modules/themeColors.js";
 
@@ -20,4 +21,4 @@ for (const href of sheets) {
   out += `\n/* ---- ${href} ---- */\n` + buildDarkOverrides(css);
 }
 fs.writeFileSync(path.join(ROOT, "css/theme-dark.generated.css"), out);
-console.log(`Wrote css/theme-dark.generated.css from ${sheets.length} stylesheets (${out.length} bytes)`);
+process.stdout.write(`Wrote css/theme-dark.generated.css from ${sheets.length} stylesheets (${out.length} bytes)\n`);
