@@ -129,7 +129,8 @@ export const frUI = {
     "temperature": "Temperature",
     "density": "Densite",
     "energy": "Energie",
-    "changelog": "Journal des modifications"
+    "changelog": "Journal des modifications",
+    "language": "Langue"
   },
   "ionGroup": {
     "plus1Cations": "Cations +1",

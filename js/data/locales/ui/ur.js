@@ -140,7 +140,8 @@ export const urUI = {
     "clearData": "Clear Local Data",
     "clearHint": "Resets theme, units, and cache",
     "clearButton": "Clear",
-    "changelog": "تبدیلیوں کا ریکارڈ"
+    "changelog": "تبدیلیوں کا ریکارڈ",
+    "language": "زبان"
   },
   "ionGroup": {
     "plus1Cations": "+1 مثبت آئن",

@@ -140,7 +140,8 @@ export const enUI = {
     "clearData": "Clear Local Data",
     "clearHint": "Resets theme, units, and cache",
     "clearButton": "Clear",
-    "changelog": "Changelog"
+    "changelog": "Changelog",
+    "language": "Language"
   },
   "ionGroup": {
     "plus1Cations": "+1 Cations",

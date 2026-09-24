@@ -140,7 +140,8 @@ export const tlUI = {
     "clearData": "Clear Local Data",
     "clearHint": "Resets theme, units, and cache",
     "clearButton": "Clear",
-    "changelog": "Talaan ng pagbabago"
+    "changelog": "Talaan ng pagbabago",
+    "language": "Wika"
   },
   "ionGroup": {
     "plus1Cations": "+1 Kation",

@@ -4,6 +4,7 @@
 // =============================================================================
 
 import { ionsData } from "../data/ionsData.js";
+import { convertValue } from "./themeColors.js";
 import { initCardSlider } from "./cardSliderController.js";
 import {
   fetchIonLocale,
@@ -514,8 +515,8 @@ export async function initIonsTable() {
 
         // apply Group-Specific Color (Overriding class-based colors)
         const bgColor = ION_GROUP_COLORS[groupId] || "#f0f0f0";
-        cell.style.backgroundColor = bgColor;
-        cell.style.borderColor = "rgba(0,0,0,0.1)";
+        cell.style.setProperty("--ion-tile-bg", bgColor);
+        cell.style.setProperty("--ion-tile-bg-dark", convertValue("background-color", bgColor) || bgColor);
 
         // Long formulas get a CSS class for smaller symbol text
         if (ion.id === "ch3coo_minus") {
@@ -920,7 +921,7 @@ function openIonModal(ion) {
       if (document.getElementById("h-plus-water-state")) {
         const statusEl = document.getElementById("h-plus-water-state");
         statusEl.textContent = cd.level2.statusBanner;
-        statusEl.style.color = "#B45309";
+        statusEl.style.color = "var(--ion-status-color, #B45309)";
         statusEl.style.fontWeight = "700";
         // Auto-fit status text to prevent overflow
         setTimeout(() => fitTextToWidth(statusEl), 0);
@@ -1114,7 +1115,7 @@ function openIonModal(ion) {
       l4Hazards.innerHTML = parseInfoList(cd.level4.hazards).join(" • ");
       l4Hazards.style.fontSize = "0.95rem";
       l4Hazards.style.fontWeight = "700";
-      l4Hazards.style.color = "#991B1B";
+      l4Hazards.style.color = "var(--hazard-text-color, #991B1B)";
       l4Hazards.parentElement.style.alignItems = "flex-start";
       l4Hazards.parentElement.style.flexDirection = "column";
     }

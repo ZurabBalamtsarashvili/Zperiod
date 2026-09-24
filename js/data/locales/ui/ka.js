@@ -140,7 +140,8 @@ export const kaUI = {
     "clearData": "ლოკალური მონაცემების წაშლა",
     "clearHint": "აბრუნებს თემას, ერთეულებს და ქეშს საწყის მდგომარეობაში",
     "clearButton": "წაშლა",
-    "changelog": "ცვლილებების ისტორია"
+    "changelog": "ცვლილებების ისტორია",
+    "language": "ენა"
   },
   "ionGroup": {
     "plus1Cations": "+1 კატიონები",

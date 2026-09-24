@@ -140,7 +140,8 @@ export const zhHantUI = {
     "clearData": "清除本地缓存",
     "clearHint": "重置单位偏好、主题与本地数据",
     "clearButton": "清除",
-    "changelog": "更新日誌"
+    "changelog": "更新日誌",
+    "language": "語言"
   },
   "ionGroup": {
     "plus1Cations": "+1 陽離子",

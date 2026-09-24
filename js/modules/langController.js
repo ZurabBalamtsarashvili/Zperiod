@@ -219,6 +219,10 @@ export function applyStaticTranslations() {
 function updateDropdown() {
   document.querySelectorAll(".lang-option").forEach((btn) => {
     btn.classList.toggle("active", btn.dataset.lang === lang);
+    if (btn.dataset.lang === lang) {
+      const label = document.getElementById("lang-current-label");
+      if (label) label.textContent = btn.textContent;
+    }
   });
 }
 

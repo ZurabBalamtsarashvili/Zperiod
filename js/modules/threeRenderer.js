@@ -98,7 +98,21 @@ function ensureSharedMaterials() {
     }),
     hitMat: new THREE.MeshBasicMaterial({ visible: false }),
   };
+  applyMaterialTheme();
   return sharedMaterials;
+}
+
+// Pure blue electrons disappear against the dark theme background, so they
+// get a soft self-glow there.
+function applyMaterialTheme() {
+  if (!sharedMaterials) return;
+  const dark = document.documentElement.classList.contains("dark-theme");
+  sharedMaterials.electronMat.emissive.setHex(dark ? 0x3355ff : 0x000000);
+  sharedMaterials.electronMat.emissiveIntensity = dark ? 0.75 : 1;
+}
+
+if (typeof window !== "undefined") {
+  window.addEventListener("zperiod:themechange", applyMaterialTheme);
 }
 
 // ===== Lazy-load Three.js =====

@@ -140,7 +140,8 @@ export const faUI = {
     "clearData": "Clear Local Data",
     "clearHint": "Resets theme, units, and cache",
     "clearButton": "Clear",
-    "changelog": "تغییرات"
+    "changelog": "تغییرات",
+    "language": "زبان"
   },
   "ionGroup": {
     "plus1Cations": "کاتیون های +1",

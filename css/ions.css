@@ -4954,3 +4954,10 @@ html[lang|="zh"] .ions-table-page .element .name.name-short {
     opacity: 0;
   }
 }
+
+/* Group colour is set per cell by ionsController (--ion-tile-bg); the dark
+   theme swaps in --ion-tile-bg-dark. */
+.element.ion-table-cell {
+  background-color: var(--ion-tile-bg, #f0f0f0);
+  border-color: rgba(0, 0, 0, 0.1);
+}

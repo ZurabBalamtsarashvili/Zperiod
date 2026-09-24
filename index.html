@@ -3,6 +3,18 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="color-scheme" content="light dark">
+    <meta name="theme-color" content="#fdfbf7">
+    <script>
+        (function () {
+            try {
+                var pref = localStorage.getItem("zperiod_theme") || "auto";
+                var dark = pref === "dark" || (pref === "auto" && window.matchMedia("(prefers-color-scheme: dark)").matches);
+                if (dark) document.documentElement.classList.add("dark-theme");
+                document.documentElement.style.colorScheme = dark ? "dark" : "light";
+            } catch (e) { /* storage unavailable: keep light */ }
+        })();
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
     <title>Interactive Periodic Table &amp; Chemical Equation Balancer | Free Chemistry Tool – Zperiod</title>
 
@@ -84,6 +96,8 @@
     <link rel="stylesheet" href="css/ion-animations.css?v=2.1.2">
     <link rel="stylesheet" href="css/mobile-landing.css?v=2.1.8">
     <link rel="stylesheet" href="css/tool-modals/shared.css?v=2.1.2">
+    <link rel="stylesheet" href="css/theme-dark.generated.css?v=2.2.0" media="screen">
+    <link rel="stylesheet" href="css/theme-dark.css?v=2.2.0" media="screen">
 
 </head>
 
@@ -738,9 +752,70 @@
     <div id="settings-page" class="blank-page">
         <div class="settings-viewport" id="page-settings">
 
-            <!-- Left column: quick links -->
+            <!-- Left column: appearance & language -->
             <aside class="sv-sidebar">
-                    <!-- Electron animation control -->
+                <section class="sv-card sv-card-appearance">
+                    <div class="sv-card-icon-row">
+                        <div class="sv-icon-circle sv-icon-theme">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="9"></circle>
+                                <path d="M12 3a9 9 0 0 0 0 18z" fill="currentColor"></path>
+                            </svg>
+                        </div>
+                        <h3 data-i18n="settings.appearance">Appearance</h3>
+                    </div>
+                    <div class="sv-anim-controls">
+                        <div class="sv-anim-row sv-theme-row">
+                            <span class="sv-anim-label" data-i18n="settings.theme">Theme</span>
+                            <div class="sv-theme-options" role="radiogroup" data-i18n-aria-label="settings.theme">
+                                <button class="sv-theme-btn" data-theme-value="light" role="radio" aria-checked="false">
+                                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path></svg>
+                                    <span data-i18n="settings.themeLight">Light</span>
+                                </button>
+                                <button class="sv-theme-btn" data-theme-value="dark" role="radio" aria-checked="false">
+                                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                                    <span data-i18n="settings.themeDark">Dark</span>
+                                </button>
+                                <button class="sv-theme-btn" data-theme-value="auto" role="radio" aria-checked="false">
+                                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="13" rx="2"></rect><path d="M8 21h8M12 17v4"></path></svg>
+                                    <span data-i18n="settings.themeAuto">Auto</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="sv-anim-row sv-lang-row">
+                            <span class="sv-anim-label" data-i18n="settings.language">Language</span>
+                            <div class="lang-dropdown" id="lang-dropdown">
+                                <button class="lang-dropdown-toggle" id="lang-dropdown-toggle">
+                                    <svg class="lang-globe-icon" width="15" height="15" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <line x1="2" y1="12" x2="22" y2="12"></line>
+                                        <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                                    </svg>
+                                    <span class="lang-current-label" id="lang-current-label">ქართული</span>
+                                    <svg class="lang-chevron" width="9" height="9" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="3">
+                                        <polyline points="6 9 12 15 18 9"></polyline>
+                                    </svg>
+                                </button>
+                                <div class="lang-dropdown-menu" id="lang-dropdown-menu">
+                                    <button class="lang-option" data-lang="en">English</button>
+                                    <button class="lang-option" data-lang="zh">简体中文</button>
+                                    <button class="lang-option" data-lang="zh-Hant">繁體中文</button>
+                                    <button class="lang-option" data-lang="fr">Français</button>
+                                    <button class="lang-option" data-lang="ru">Русский</button>
+                                    <button class="lang-option" data-lang="fa">فارسی</button>
+                                    <button class="lang-option" data-lang="ur">اردو</button>
+                                    <button class="lang-option" data-lang="tl">Tagalog</button>
+                                    <button class="lang-option active" data-lang="ka">ქართული</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Electron animation control -->
                     <section class="sv-card sv-card-anim">
                         <div class="sv-card-icon-row">
                             <div class="sv-icon-circle">
@@ -774,34 +849,6 @@
                         </div>
                     </section>
 
-                <div class="sv-sidebar-footer">
-                    <div class="lang-dropdown" id="lang-dropdown">
-                        <button class="lang-dropdown-toggle" id="lang-dropdown-toggle">
-                            <svg class="lang-globe-icon" width="15" height="15" viewBox="0 0 24 24" fill="none"
-                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <circle cx="12" cy="12" r="10"></circle>
-                                <line x1="2" y1="12" x2="22" y2="12"></line>
-                                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
-                            </svg>
-                            <svg class="lang-chevron" width="9" height="9" viewBox="0 0 24 24" fill="none"
-                                stroke="currentColor" stroke-width="3">
-                                <polyline points="6 9 12 15 18 9"></polyline>
-                            </svg>
-                        </button>
-                        <div class="lang-dropdown-menu" id="lang-dropdown-menu">
-                            <button class="lang-option" data-lang="en">English</button>
-                            <button class="lang-option" data-lang="zh">Simplified Chinese</button>
-                            <button class="lang-option" data-lang="zh-Hant">Traditional Chinese</button>
-                            <button class="lang-option" data-lang="fr">Francais</button>
-                            <button class="lang-option" data-lang="ru">Русский</button>
-                            <button class="lang-option" data-lang="fa">Farsi</button>
-                            <button class="lang-option" data-lang="ur">Urdu</button>
-                            <button class="lang-option" data-lang="tl">Tagalog</button>
-                            <button class="lang-option active" data-lang="ka">ქართული</button>
-                        </div>
-                    </div>
-
-                </div>
             </aside>
 
             <!-- Center column: controls -->

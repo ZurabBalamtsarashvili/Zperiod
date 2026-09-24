@@ -140,7 +140,8 @@ export const ruUI = {
     "clearData": "Clear Local Data",
     "clearHint": "Resets theme, units, and cache",
     "clearButton": "Clear",
-    "changelog": "Список изменений"
+    "changelog": "Список изменений",
+    "language": "Язык"
   },
   "ionGroup": {
     "plus1Cations": "Катионы +1",

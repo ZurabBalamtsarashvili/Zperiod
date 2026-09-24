@@ -1,0 +1,292 @@
+/* =========================================
+   theme-dark.css — hand-tuned dark theme
+   Loaded after css/theme-dark.generated.css (automatic colour mapping of
+   every light stylesheet); rules here set the palette and fix the spots
+   where an automatic mapping is not good enough.
+   ========================================= */
+
+html.dark-theme {
+  color-scheme: dark;
+  --bg-color: #0f1115;
+  --surface-1: #161920;
+  --surface-2: #1c2028;
+  --surface-3: #242935;
+  --element-bg: #1c2028;
+  --element-hover: #252a34;
+  --text-primary: #ebe9e6;
+  --text-secondary: #b3b7c0;
+  --text-muted: #838894;
+  --text-highlight: #f5b98d;
+  --border-color: rgba(255, 255, 255, 0.08);
+  --modal-bg-glass: rgba(22, 25, 32, 0.94);
+  --modal-text-main: #ebe9e6;
+  --modal-text-sub: #9aa0ab;
+  --ion-status-color: #fbbf24;
+  --hazard-text-color: #fca5a5;
+}
+
+html.dark-theme body {
+  background-color: var(--bg-color);
+  color: var(--text-primary);
+}
+
+html.dark-theme ::selection {
+  background: rgba(129, 140, 248, 0.35);
+}
+
+/* ---- Navigation ---- */
+html.dark-theme .global-nav {
+  background: rgba(22, 25, 32, 0.78);
+  border-color: rgba(255, 255, 255, 0.07);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.35);
+}
+
+html.dark-theme .global-nav-pill,
+html.dark-theme .sv-theme-options,
+html.dark-theme .sv-lang-row .lang-dropdown-toggle {
+  background: rgba(255, 255, 255, 0.06);
+}
+
+html.dark-theme .nav-pill-slider,
+html.dark-theme .sv-nav-pill-slider,
+html.dark-theme .sv-theme-btn.active {
+  background: var(--surface-3);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.45);
+}
+
+html.dark-theme .nav-pill-btn.active,
+html.dark-theme .sv-theme-btn.active,
+html.dark-theme .unit-setting-btn.active {
+  color: #ffffff !important;
+}
+
+html.dark-theme .lang-dropdown-menu,
+html.dark-theme .sv-sidebar-footer .lang-dropdown-menu {
+  background: rgba(28, 32, 40, 0.97);
+  border-color: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.55);
+}
+
+/* ---- Cards & panels ---- */
+html.dark-theme .sv-card,
+html.dark-theme .sv-changelog {
+  background: rgba(22, 25, 32, 0.82);
+  border-color: rgba(255, 255, 255, 0.06);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 10px 30px rgba(0, 0, 0, 0.35);
+}
+
+html.dark-theme .sv-icon-circle {
+  background: rgba(255, 255, 255, 0.06);
+}
+
+html.dark-theme .sv-icon-theme {
+  background: rgba(129, 140, 248, 0.16);
+  color: #a5b4fc;
+}
+
+/* ---- Modals ---- */
+html.dark-theme .modal-overlay.active {
+  background-color: rgba(5, 6, 9, 0.6);
+}
+
+html.dark-theme .modal-content {
+  background: var(--surface-1);
+  border-color: rgba(255, 255, 255, 0.06);
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.6);
+}
+
+html.dark-theme .modal-close,
+html.dark-theme .modal-help-btn {
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--text-secondary);
+}
+
+html.dark-theme .modal-close:hover,
+html.dark-theme .modal-help-btn:hover {
+  background: rgba(255, 255, 255, 0.14);
+  color: var(--text-primary);
+}
+
+/* ---- Form controls ---- */
+html.dark-theme input,
+html.dark-theme textarea,
+html.dark-theme select {
+  color: var(--text-primary);
+}
+
+html.dark-theme input::placeholder,
+html.dark-theme textarea::placeholder {
+  color: #6f7581;
+}
+
+/* ---- Scrollbars ---- */
+html.dark-theme ::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.14);
+}
+
+/* ---- Ions table ---- */
+html.dark-theme .element.ion-table-cell {
+  background-color: var(--ion-tile-bg-dark, #242935);
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+/* ---- Element / ion modal ---- */
+html.dark-theme .modal-info-pane {
+  background: var(--surface-1);
+}
+
+html.dark-theme .level-header,
+html.dark-theme .modal-info-pane.scrolled .level-header {
+  background: var(--surface-2);
+  border-color: rgba(255, 255, 255, 0.06);
+}
+
+html.dark-theme .modal-visual-pane {
+  background: radial-gradient(circle at center, rgba(99, 132, 255, 0.09) 0%, rgba(99, 132, 255, 0) 70%);
+  border-left-color: rgba(255, 255, 255, 0.05);
+}
+
+/* ---- Periodic table category palette ---- */
+html.dark-theme .element.alkali-metal {
+  background-color: hsl(0, 42%, 21%);
+  color: #ffc9c9;
+}
+html.dark-theme .legend-swatch.alkali-metal {
+  background-color: hsl(0, 70%, 62%);
+  border-color: transparent;
+}
+html.dark-theme .element.alkaline-earth,
+html.dark-theme .element.alkaline-earth-metal {
+  background-color: hsl(28, 46%, 20%);
+  color: #ffd9b8;
+}
+html.dark-theme .legend-swatch.alkaline-earth-metal {
+  background-color: hsl(28, 80%, 60%);
+  border-color: transparent;
+}
+html.dark-theme .element.transition-metal {
+  background-color: hsl(44, 42%, 18%);
+  color: #f3e1a6;
+}
+html.dark-theme .legend-swatch.transition-metal {
+  background-color: hsl(44, 80%, 58%);
+  border-color: transparent;
+}
+html.dark-theme .element.post-transition-metal {
+  background-color: hsl(220, 32%, 23%);
+  color: #c8d6f5;
+}
+html.dark-theme .legend-swatch.post-transition-metal {
+  background-color: hsl(220, 60%, 66%);
+  border-color: transparent;
+}
+html.dark-theme .element.metalloid {
+  background-color: hsl(158, 32%, 18%);
+  color: #b4e3cf;
+}
+html.dark-theme .legend-swatch.metalloid {
+  background-color: hsl(158, 50%, 52%);
+  border-color: transparent;
+}
+html.dark-theme .element.other-nonmetal,
+html.dark-theme .element.non-metal,
+html.dark-theme .element.polyatomic-nonmetal,
+html.dark-theme .element.diatomic-nonmetal {
+  background-color: hsl(100, 28%, 18%);
+  color: #cde8bd;
+}
+html.dark-theme .legend-swatch.other-nonmetal,
+html.dark-theme .legend-swatch.non-metal {
+  background-color: hsl(100, 45%, 55%);
+  border-color: transparent;
+}
+html.dark-theme .element.halogen {
+  background-color: hsl(58, 36%, 17%);
+  color: #eeeaa4;
+}
+html.dark-theme .legend-swatch.halogen {
+  background-color: hsl(58, 65%, 55%);
+  border-color: transparent;
+}
+html.dark-theme .element.noble-gas {
+  background-color: hsl(268, 36%, 24%);
+  color: #dcc8ff;
+}
+html.dark-theme .legend-swatch.noble-gas {
+  background-color: hsl(268, 70%, 72%);
+  border-color: transparent;
+}
+html.dark-theme .element.lanthanide {
+  background-color: hsl(20, 38%, 20%);
+  color: #f7d2bd;
+}
+html.dark-theme .legend-swatch.lanthanide {
+  background-color: hsl(20, 70%, 62%);
+  border-color: transparent;
+}
+html.dark-theme .element.actinide {
+  background-color: hsl(350, 36%, 21%);
+  color: #f8c6cc;
+}
+html.dark-theme .legend-swatch.actinide {
+  background-color: hsl(350, 65%, 64%);
+  border-color: transparent;
+}
+html.dark-theme .element.unknown,
+html.dark-theme .element.undefined {
+  background-color: #262a33;
+  color: #9aa0ab;
+}
+
+html.dark-theme .element {
+  border-color: rgba(255, 255, 255, 0.06);
+}
+
+/* ---- Primary actions in tools ----
+   (extra `body` keeps these above the runtime overrides generated for the
+   tools' injected <style> blocks) */
+html.dark-theme body .balancer-btn-primary,
+html.dark-theme body .molar-action-btn-primary,
+html.dark-theme body .virtual-lab-btn.primary,
+html.dark-theme body .tool-button.primary-btn {
+  background: linear-gradient(135deg, #6366f1 0%, #7c3aed 100%);
+  color: #ffffff;
+  border-color: transparent;
+  box-shadow: 0 6px 18px rgba(99, 102, 241, 0.3);
+}
+
+html.dark-theme body .balancer-btn-primary:hover,
+html.dark-theme body .molar-action-btn-primary:hover,
+html.dark-theme body .virtual-lab-btn.primary:hover,
+html.dark-theme body .tool-button.primary-btn:hover {
+  background: linear-gradient(135deg, #7174f5 0%, #8b4cf0 100%);
+}
+
+/* ---- Guided tours (driver.js) ---- */
+html.dark-theme .driver-popover {
+  background: var(--surface-2);
+  color: var(--text-primary);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.55);
+}
+
+html.dark-theme .driver-popover-title {
+  color: var(--text-primary);
+}
+
+html.dark-theme .driver-popover-description,
+html.dark-theme .driver-popover-progress-text {
+  color: var(--text-secondary);
+}
+
+html.dark-theme .driver-popover-footer button {
+  background: var(--surface-3);
+  color: var(--text-primary);
+  border-color: rgba(255, 255, 255, 0.1);
+  text-shadow: none;
+}
+
+html.dark-theme .driver-popover-arrow-side-left.driver-popover-arrow { border-left-color: var(--surface-2); }
+html.dark-theme .driver-popover-arrow-side-right.driver-popover-arrow { border-right-color: var(--surface-2); }
+html.dark-theme .driver-popover-arrow-side-top.driver-popover-arrow { border-top-color: var(--surface-2); }
+html.dark-theme .driver-popover-arrow-side-bottom.driver-popover-arrow { border-bottom-color: var(--surface-2); }

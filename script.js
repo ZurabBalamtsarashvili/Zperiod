@@ -22,6 +22,7 @@ import {
   t
 } from "./js/modules/langController.js";
 import { initOnboardingFlow } from "./js/modules/onboardingController.js";
+import { initThemeController } from "./js/modules/themeController.js";
 
 function isRealMobileDevice() {
   // Wide viewports (> 1024px) get the full desktop app, even on touch devices like iPad.
@@ -492,6 +493,7 @@ function initNavResponsive() {
 window.zperiodVersion = 'old';
 
 function bootstrapApp() {
+  initThemeController();
   initLangController();
 
   if (isRealMobileDevice()) {
