@@ -2,6 +2,8 @@
   "name": "zperiod",
   "private": true,
   "version": "2.0.0",
+  "author": "Zurab Balamtsarashvili",
+  "license": "MIT",
   "scripts": {
     "dev": "vite",
     "lint": "eslint . --ext .js --cache --cache-location .eslintcache --quiet",

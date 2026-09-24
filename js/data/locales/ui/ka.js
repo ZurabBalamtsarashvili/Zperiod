@@ -122,14 +122,6 @@ export const kaUI = {
     "placeholder": "დააჭირეთ „ფურცლის შექმნას“ სავარჯიშოების მისაღებად"
   },
   "settings": {
-    "github": "GitHub",
-    "githubDesc": "მომეცით ვარსკვლავი",
-    "coffee": "Buy Me a Coffee",
-    "coffeeDesc": "მხარი დაუჭირეთ განვითარებას",
-    "helpAbout": "დახმარება / შესახებ",
-    "helpAboutDesc": "გაცნობა და კონტაქტი",
-    "discord": "შემოგვიერთდით Discord-ზე",
-    "discordDesc": "საზოგადოება და უკუკავშირი",
     "electronAnimation": "ელექტრონების ანიმაცია",
     "playback": "დაკვრა",
     "speed": "სიჩქარე",
@@ -137,9 +129,6 @@ export const kaUI = {
     "temperature": "ტემპ.",
     "density": "სიმკვრივე",
     "energy": "ენერგია",
-    "sendSuggestion": "გამოგზავნეთ წინადადება",
-    "suggestHint": "დაგვეხმარეთ Zperiod-ის გაუმჯობესებაში — აირჩიეთ თემა ან დაწერეთ თქვენით.",
-    "sendBtnText": "გაგზავნა",
     "preferences": "პარამეტრები",
     "appearance": "იერსახე",
     "theme": "თემა",
@@ -151,14 +140,7 @@ export const kaUI = {
     "clearData": "ლოკალური მონაცემების წაშლა",
     "clearHint": "აბრუნებს თემას, ერთეულებს და ქეშს საწყის მდგომარეობაში",
     "clearButton": "წაშლა",
-    "chipMoreData": "მეტი მონაცემი",
-    "chipBugReport": "შეცდომის შეტყობინება",
-    "chipNewTool": "ახალი ხელსაწყო",
-    "chipUIDesign": "ინტერფეისი / დიზაინი",
-    "chipOther": "სხვა",
-    "suggestPlaceholder": "დაწერეთ თქვენი წინადადება...",
-    "changelog": "ცვლილებების ისტორია",
-    "addLanguage": "ენის დამატება"
+    "changelog": "ცვლილებების ისტორია"
   },
   "ionGroup": {
     "plus1Cations": "+1 კატიონები",
@@ -231,15 +213,6 @@ export const kaUI = {
     "balancerHelpRule2": "დაწერეთ Fe2O3 და არა Fe2 O3 ან Fe 2O3.",
     "balancerHelpRule3": "შეგიძლიათ ისრიანი ფორმაც ჩასვათ, მაგალითად H2 + O2 → H2O.",
     "balancerHelpExample": "მაგალითი: Fe + O2 → Fe2O3"
-  },
-  "settingsCtrl": {
-    "suggSent": "გაიგზავნა! გმადლობთ უკუკავშირისთვის.",
-    "suggPlaceholder": "დაწერეთ თქვენი წინადადება...",
-    "continuePlaceholder": "განაგრძეთ წერა...",
-    "prefillMoreData": "დაამატეთ მეტი მონაცემი ელემენტებზე",
-    "prefillBugReport": "შეცდომის შეტყობინება: ",
-    "prefillNewTool": "ახალი ხელსაწყოს იდეა: ",
-    "prefillUIDesign": "ინტერფეისის გაუმჯობესება: "
   },
   "common": {
     "clickToChangeUnit": "დააჭირეთ ერთეულის შესაცვლელად",
@@ -604,9 +577,7 @@ export const kaUI = {
     "cta": "დაწყება",
     "footer": "v2.0 · Precision Lab გამოცემა",
     "viewUpdateHistory": "განახლებების ისტორიის ნახვა",
-    "authorRole": "შემქმნელი და Full Stack დეველოპერი",
-    "schoolInfo": "Aurora High School · მე-11 კლასი (2027)",
-    "location": "ტორონტო (კანადა)"
+    "authorRole": "შემქმნელი და დეველოპერი"
   },
   "changelog": {
     "eyebrow": "რა არის ახალი",
@@ -716,9 +687,5 @@ export const kaUI = {
     "start": "დაწყება",
     "selectLanguage": "აირჩიეთ ენა",
     "chooseLanguage": "გასაგრძელებლად აირჩიეთ სასურველი ენა"
-  },
-  "discord": {
-    "join": "შემოგვიერთდით Discord-ზე",
-    "link": "https://discord.gg/xfKQD65udk"
   }
 };

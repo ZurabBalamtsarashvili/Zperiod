@@ -14,10 +14,6 @@
 
 ---
 
-> [!NOTE]
-> This repository contains the open-source legacy version of Zperiod. The current product is available at [zperiod.app](https://zperiod.app) and may differ significantly from this codebase.
-
----
 
 ## ✨ Features
 
@@ -70,7 +66,7 @@
 ### Local Development
 ```bash
 # Clone the repository
-git clone https://github.com/YOUR_USERNAME/zperiod.git
+git clone https://github.com/ZurabBalamtsarashvili/Zperiod.git
 
 # Navigate to project directory
 cd zperiod
@@ -196,16 +192,22 @@ Zperiod follows modern design principles:
 
 ---
 
+## 👤 Author
+
+**Zurab Balamtsarashvili**
+
+---
+
 ## 🛡️ License
 
-This project is open source under the [MIT License](LICENSE).
+© 2026 Zurab Balamtsarashvili. Released under the [MIT License](LICENSE).
 
 ---
 
 ## 🙏 Acknowledgments
 
 - **Three.js** - 3D graphics library
-- **Google Fonts (Inter)** - Typography
+- **Inter** & **Mark GEO** - Typography
 - **The Chemistry Community** - For inspiration
 
 ---
@@ -215,7 +217,5 @@ This project is open source under the [MIT License](LICENSE).
 **Built with ❤️ and lots of ☕**
 
 *Stop memorizing — start visualizing.*
-
-[![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/Zperiod)
 
 </div>

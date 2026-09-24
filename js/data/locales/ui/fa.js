@@ -122,12 +122,6 @@ export const faUI = {
     "placeholder": "برای ساخت تمرین روی «ساخت برگه تمرین» کلیک کنید"
   },
   "settings": {
-    "github": "GitHub",
-    "githubDesc": "کد منبع و مشارکت",
-    "coffee": "حمایت مالی",
-    "coffeeDesc": "حمایت از توسعه",
-    "helpAbout": "راهنما / درباره",
-    "helpAboutDesc": "معرفی و تماس",
     "electronAnimation": "انیمیشن الکترون",
     "playback": "پخش",
     "speed": "سرعت",
@@ -135,9 +129,6 @@ export const faUI = {
     "temperature": "دما",
     "density": "چگالی",
     "energy": "انرژی",
-    "sendSuggestion": "ارسال پیشنهاد",
-    "suggestHint": "به ما کمک کنید Zperiod را بهتر کنیم — یک موضوع انتخاب کنید یا پیشنهاد خودتان را بنویسید.",
-    "sendBtnText": "ارسال",
     "preferences": "Preferences",
     "appearance": "Appearance",
     "theme": "Theme",
@@ -149,14 +140,7 @@ export const faUI = {
     "clearData": "Clear Local Data",
     "clearHint": "Resets theme, units, and cache",
     "clearButton": "Clear",
-    "chipMoreData": "داده بیشتر",
-    "chipBugReport": "گزارش باگ",
-    "chipNewTool": "ابزار جدید",
-    "chipUIDesign": "رابط / طراحی",
-    "chipOther": "سایر",
-    "suggestPlaceholder": "پیشنهاد خود را بنویسید...",
-    "changelog": "تغییرات",
-    "addLanguage": "Add Language"
+    "changelog": "تغییرات"
   },
   "ionGroup": {
     "plus1Cations": "کاتیون های +1",
@@ -229,15 +213,6 @@ export const faUI = {
     "balancerHelpRule2": "Fe2O3 بنویسید، نه Fe2 O3 یا Fe 2O3.",
     "balancerHelpRule3": "می توانید فرم پیکانی مثل H2 + O2 → H2O را هم مستقیم وارد کنید.",
     "balancerHelpExample": "نمونه: Fe + O2 → Fe2O3"
-  },
-  "settingsCtrl": {
-    "suggSent": "ارسال شد! ممنون از بازخورد شما.",
-    "suggPlaceholder": "پیشنهاد خود را بنویسید...",
-    "continuePlaceholder": "ادامه دهید...",
-    "prefillMoreData": "داده های بیشتری برای عنصرها اضافه شود",
-    "prefillBugReport": "گزارش باگ: ",
-    "prefillNewTool": "ایده برای ابزار جدید: ",
-    "prefillUIDesign": "پیشنهاد بهبود رابط: "
   },
   "common": {
     "clickToChangeUnit": "برای تغییر واحد کلیک کنید",
@@ -602,9 +577,7 @@ export const faUI = {
     "cta": "شروع کنید",
     "footer": "v2.0 · بازطراحی کامل",
     "viewUpdateHistory": "مشاهده تاریخچه بروزرسانی",
-    "authorRole": "سازنده و توسعه‌دهنده فول‌استک",
-    "schoolInfo": "Aurora High School · پایه 11 (2027)",
-    "location": "تورنتو، کانادا"
+    "authorRole": "سازنده و توسعه‌دهنده فول‌استک"
   },
   "changelog": {
     "eyebrow": "تازه ها",

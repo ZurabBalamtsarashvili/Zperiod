@@ -122,14 +122,6 @@ export const zhUI = {
     "placeholder": "点击「生成练习」来创建练习题"
   },
   "settings": {
-    "github": "GitHub",
-    "githubDesc": "给我个星星",
-    "coffee": "请我喝杯咖啡",
-    "coffeeDesc": "支持开发",
-    "helpAbout": "帮助 / 关于",
-    "helpAboutDesc": "功能介绍 & 联系开发者",
-    "discord": "加入 Discord",
-    "discordDesc": "社区交流与反馈",
     "electronAnimation": "电子动画",
     "playback": "播放",
     "speed": "速度",
@@ -137,9 +129,6 @@ export const zhUI = {
     "temperature": "温度",
     "density": "密度",
     "energy": "能量",
-    "sendSuggestion": "发送反馈",
-    "suggestHint": "帮助我们改进 Zperiod — 选择一个话题或自由输入。",
-    "sendBtnText": "发送",
     "preferences": "高级能力",
     "appearance": "外观设置",
     "theme": "界面主题",
@@ -151,14 +140,7 @@ export const zhUI = {
     "clearData": "清除本地缓存",
     "clearHint": "重置单位偏好、主题与本地数据",
     "clearButton": "清除",
-    "chipMoreData": "更多数据",
-    "chipBugReport": "问题反馈",
-    "chipNewTool": "新工具",
-    "chipUIDesign": "界面 / 设计",
-    "chipOther": "其他",
-    "suggestPlaceholder": "输入你的建议...",
-    "changelog": "更新日志",
-    "addLanguage": "添加语言"
+    "changelog": "更新日志"
   },
   "ionGroup": {
     "plus1Cations": "+1 阳离子",
@@ -231,15 +213,6 @@ export const zhUI = {
     "balancerHelpRule2": "请写 Fe2O3，不要写 Fe2 O3 或 Fe 2O3。",
     "balancerHelpRule3": "也可以直接粘贴带箭头的形式，例如 H2 + O2 → H2O。",
     "balancerHelpExample": "示例：Fe + O2 → Fe2O3"
-  },
-  "settingsCtrl": {
-    "suggSent": "已发送！感谢您的反馈。",
-    "suggPlaceholder": "输入你的建议...",
-    "continuePlaceholder": "继续输入...",
-    "prefillMoreData": "补充更多元素数据",
-    "prefillBugReport": "问题反馈：",
-    "prefillNewTool": "新工具想法：",
-    "prefillUIDesign": "界面优化建议："
   },
   "common": {
     "clickToChangeUnit": "点击切换单位",
@@ -604,9 +577,7 @@ export const zhUI = {
     "cta": "开始使用",
     "footer": "v2.0 · 实验室精准版",
     "viewUpdateHistory": "查看更新历史",
-    "authorRole": "创作者 / 全栈开发者",
-    "schoolInfo": "Aurora High School · 11 年级（2027）",
-    "location": "加拿大 多伦多"
+    "authorRole": "创作者 / 全栈开发者"
   },
   "changelog": {
     "eyebrow": "更新内容",
@@ -714,9 +685,5 @@ export const zhUI = {
       "分子之美"
     ],
     "start": "开始"
-  },
-  "discord": {
-    "join": "加入discord",
-    "link": "https://discord.gg/xfKQD65udk"
   }
 };

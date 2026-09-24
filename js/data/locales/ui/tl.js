@@ -122,12 +122,6 @@ export const tlUI = {
     "placeholder": "I-click ang 'Gumawa ng worksheet' para gumawa ng mga tanong"
   },
   "settings": {
-    "github": "GitHub",
-    "githubDesc": "Source code at mga ambag",
-    "coffee": "Suporta",
-    "coffeeDesc": "Suportahan ang development",
-    "helpAbout": "Tulong / Tungkol",
-    "helpAboutDesc": "Panimula at Makipag-ugnayan",
     "electronAnimation": "Animation ng Electron",
     "playback": "Pag-playback",
     "speed": "Bilis",
@@ -135,9 +129,6 @@ export const tlUI = {
     "temperature": "Temperatura",
     "density": "Densidad",
     "energy": "Enerhiya",
-    "sendSuggestion": "Magpadala ng mungkahi",
-    "suggestHint": "Tulungan kaming pagandahin ang Zperiod — pumili ng paksa o isulat ang sarili mong mungkahi.",
-    "sendBtnText": "Ipadala",
     "preferences": "Preferences",
     "appearance": "Appearance",
     "theme": "Theme",
@@ -149,14 +140,7 @@ export const tlUI = {
     "clearData": "Clear Local Data",
     "clearHint": "Resets theme, units, and cache",
     "clearButton": "Clear",
-    "chipMoreData": "Mas Maraming Data",
-    "chipBugReport": "Ulat ng Bug",
-    "chipNewTool": "Bagong Tool",
-    "chipUIDesign": "UI / Disenyo",
-    "chipOther": "Iba pa",
-    "suggestPlaceholder": "I-type ang mungkahi...",
-    "changelog": "Talaan ng pagbabago",
-    "addLanguage": "Add Language"
+    "changelog": "Talaan ng pagbabago"
   },
   "ionGroup": {
     "plus1Cations": "+1 Kation",
@@ -229,15 +213,6 @@ export const tlUI = {
     "balancerHelpRule2": "Isulat ang Fe2O3, hindi Fe2 O3 o Fe 2O3.",
     "balancerHelpRule3": "Pwede ring i-paste ang anyong may arrow tulad ng H2 + O2 → H2O.",
     "balancerHelpExample": "Halimbawa: Fe + O2 → Fe2O3"
-  },
-  "settingsCtrl": {
-    "suggSent": "Naipadala na! Salamat sa feedback.",
-    "suggPlaceholder": "I-type ang mungkahi...",
-    "continuePlaceholder": "Magpatuloy sa pag-type...",
-    "prefillMoreData": "Magdagdag pa ng datos ng elemento",
-    "prefillBugReport": "Ulat ng bug: ",
-    "prefillNewTool": "Ideya para sa bagong tool: ",
-    "prefillUIDesign": "Pagbutihin ang interface: "
   },
   "common": {
     "clickToChangeUnit": "I-click upang palitan ang unit",
@@ -602,9 +577,7 @@ export const tlUI = {
     "cta": "Magsimula",
     "footer": "v2.0 · Ganap na muling inayos",
     "viewUpdateHistory": "Tingnan ang update history",
-    "authorRole": "Creator at Full Stack Developer",
-    "schoolInfo": "Aurora High School · Baitang 11 (2027)",
-    "location": "Toronto, Kanada"
+    "authorRole": "Creator at Full Stack Developer"
   },
   "changelog": {
     "eyebrow": "Ano ang Bago",

@@ -284,30 +284,6 @@ export function initLangController() {
   // Language option clicks
   if (menu) {
     menu.addEventListener("click", (e) => {
-      const addBtn = e.target.closest("#lang-add-btn");
-      if (addBtn) {
-        if (dropdown) dropdown.classList.remove("open");
-        const settingsNav = document.querySelector('.nav-pill-btn[data-page="settings"]');
-        if (settingsNav) settingsNav.click();
-        
-        setTimeout(() => {
-          const suggestBox = document.getElementById("settings-suggestion-input");
-          if (suggestBox) {
-            suggestBox.scrollIntoView({ behavior: "smooth", block: "center" });
-            suggestBox.focus();
-            suggestBox.style.transition = "box-shadow 0.3s ease, background-color 0.3s ease";
-            suggestBox.style.boxShadow = "0 0 0 4px rgba(250, 204, 21, 0.4)";
-            suggestBox.style.backgroundColor = "rgba(254, 243, 199, 0.5)";
-            
-            setTimeout(() => {
-              suggestBox.style.boxShadow = "";
-              suggestBox.style.backgroundColor = "";
-            }, 800);
-          }
-        }, 300);
-        return;
-      }
-
       const btn = e.target.closest(".lang-option");
       if (!btn) return;
       const code = btn.dataset.lang;

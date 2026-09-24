@@ -244,29 +244,6 @@ function initWelcomeModal() {
   });
 }
 
-// Email copy function
-window.copyEmail = function (text, btn) {
-  navigator.clipboard
-    .writeText(text)
-    .then(() => {
-      const copyIcon = btn.querySelector(".icon-copy");
-      const checkIcon = btn.querySelector(".icon-check");
-
-      if (copyIcon) copyIcon.style.display = "none";
-      if (checkIcon) checkIcon.style.display = "block";
-
-      btn.style.transform = "scale(0.98)";
-      setTimeout(() => (btn.style.transform = "scale(1)"), 100);
-
-      setTimeout(() => {
-        if (copyIcon) copyIcon.style.display = "block";
-        if (checkIcon) checkIcon.style.display = "none";
-      }, 2000);
-    })
-    .catch((err) => {
-      console.error("Failed to copy: ", err);
-    });
-};
 
 // ========================================
 // Periodic Table Auto-Scale on Short Viewport
@@ -671,9 +648,6 @@ function bootstrapApp() {
     if (window._scalePeriodicTable) window._scalePeriodicTable(true);
   });
   initSettingsController({
-    onOpenWelcome: () => {
-      if (window._showWelcome) window._showWelcome();
-    },
     l3UnitState,
     setGlobalUnit,
   });

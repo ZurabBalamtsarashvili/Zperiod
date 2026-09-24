@@ -122,14 +122,6 @@ export const enUI = {
     "placeholder": "Click 'Generate Worksheet' to create practice problems"
   },
   "settings": {
-    "github": "GitHub",
-    "githubDesc": "Give me a star",
-    "coffee": "Buy Me a Coffee",
-    "coffeeDesc": "Support development",
-    "helpAbout": "Help / About",
-    "helpAboutDesc": "Introduction & Contact Me",
-    "discord": "Join Discord",
-    "discordDesc": "Community & feedback",
     "electronAnimation": "Electron Animation",
     "playback": "Playback",
     "speed": "Speed",
@@ -137,9 +129,6 @@ export const enUI = {
     "temperature": "Temp.",
     "density": "Density",
     "energy": "Energy",
-    "sendSuggestion": "Send a Suggestion",
-    "suggestHint": "Help us improve Zperiod — pick a topic or write your own.",
-    "sendBtnText": "Send",
     "preferences": "Preferences",
     "appearance": "Appearance",
     "theme": "Theme",
@@ -151,14 +140,7 @@ export const enUI = {
     "clearData": "Clear Local Data",
     "clearHint": "Resets theme, units, and cache",
     "clearButton": "Clear",
-    "chipMoreData": "More Data",
-    "chipBugReport": "Bug Report",
-    "chipNewTool": "New Tool",
-    "chipUIDesign": "Interface / Design",
-    "chipOther": "Other",
-    "suggestPlaceholder": "Type your suggestion...",
-    "changelog": "Changelog",
-    "addLanguage": "Add Language"
+    "changelog": "Changelog"
   },
   "ionGroup": {
     "plus1Cations": "+1 Cations",
@@ -231,15 +213,6 @@ export const enUI = {
     "balancerHelpRule2": "Write Fe2O3, not Fe2 O3 or Fe 2O3.",
     "balancerHelpRule3": "You can also paste an arrow form such as H2 + O2 → H2O.",
     "balancerHelpExample": "Example: Fe + O2 → Fe2O3"
-  },
-  "settingsCtrl": {
-    "suggSent": "Sent! Thanks for your feedback.",
-    "suggPlaceholder": "Type your suggestion...",
-    "continuePlaceholder": "Continue typing...",
-    "prefillMoreData": "Add more element data",
-    "prefillBugReport": "Bug report: ",
-    "prefillNewTool": "New tool idea: ",
-    "prefillUIDesign": "Interface improvement: "
   },
   "common": {
     "clickToChangeUnit": "Click to change unit",
@@ -603,9 +576,7 @@ export const enUI = {
     "cta": "Get Started",
     "footer": "v2.0 · Precision Lab Edition",
     "viewUpdateHistory": "View Update History",
-    "authorRole": "Creator & Full Stack Developer",
-    "schoolInfo": "Aurora High School · Grade 11 (2027)",
-    "location": "Toronto (Canada)"
+    "authorRole": "Creator & Developer"
   },
   "changelog": {
     "eyebrow": "What's New",
@@ -715,9 +686,5 @@ export const enUI = {
     "start": "Start",
     "selectLanguage": "Select Language",
     "chooseLanguage": "Choose your preferred language to continue"
-  },
-  "discord": {
-    "join": "Join Discord",
-    "link": "https://discord.gg/xfKQD65udk"
   }
 };

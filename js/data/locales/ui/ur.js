@@ -122,12 +122,6 @@ export const urUI = {
     "placeholder": "مشق کے سوال بنانے کے لئے 'ورقہ تیار کریں' پر کلک کریں"
   },
   "settings": {
-    "github": "GitHub",
-    "githubDesc": "سورس کوڈ اور تعاون",
-    "coffee": "مالی معاونت",
-    "coffeeDesc": "ترقی میں معاونت",
-    "helpAbout": "مدد / تعارف",
-    "helpAboutDesc": "تعارف اور رابطہ",
     "electronAnimation": "الیکٹران اینیمیشن",
     "playback": "پلے بیک",
     "speed": "رفتار",
@@ -135,9 +129,6 @@ export const urUI = {
     "temperature": "درجہ حرارت",
     "density": "کثافت",
     "energy": "توانائی",
-    "sendSuggestion": "تجویز بھیجیں",
-    "suggestHint": "Zperiod کو بہتر بنانے میں ہماری مدد کریں — ایک موضوع منتخب کریں یا اپنی تجویز لکھیں۔",
-    "sendBtnText": "بھیجیں",
     "preferences": "Preferences",
     "appearance": "Appearance",
     "theme": "Theme",
@@ -149,14 +140,7 @@ export const urUI = {
     "clearData": "Clear Local Data",
     "clearHint": "Resets theme, units, and cache",
     "clearButton": "Clear",
-    "chipMoreData": "مزید ڈیٹا",
-    "chipBugReport": "بگ رپورٹ",
-    "chipNewTool": "نیا اوزار",
-    "chipUIDesign": "انٹرفیس / ڈیزائن",
-    "chipOther": "دیگر",
-    "suggestPlaceholder": "اپنی تجویز لکھیں...",
-    "changelog": "تبدیلیوں کا ریکارڈ",
-    "addLanguage": "Add Language"
+    "changelog": "تبدیلیوں کا ریکارڈ"
   },
   "ionGroup": {
     "plus1Cations": "+1 مثبت آئن",
@@ -229,15 +213,6 @@ export const urUI = {
     "balancerHelpRule2": "Fe2O3 لکھیں، Fe2 O3 یا Fe 2O3 نہیں۔",
     "balancerHelpRule3": "آپ تیر والی شکل بھی چسپاں کر سکتے ہیں، جیسے H2 + O2 → H2O۔",
     "balancerHelpExample": "مثال: Fe + O2 → Fe2O3"
-  },
-  "settingsCtrl": {
-    "suggSent": "بھیج دیا گیا! شکریہ۔",
-    "suggPlaceholder": "اپنی تجویز لکھیں...",
-    "continuePlaceholder": "مزید لکھیں...",
-    "prefillMoreData": "عناصر کے بارے میں مزید ڈیٹا شامل کریں",
-    "prefillBugReport": "بگ رپورٹ: ",
-    "prefillNewTool": "نئے اوزار کا خیال: ",
-    "prefillUIDesign": "انٹرفیس میں بہتری: "
   },
   "common": {
     "clickToChangeUnit": "اکائی بدلنے کے لیے کلک کریں",
@@ -602,9 +577,7 @@ export const urUI = {
     "cta": "شروع کریں",
     "footer": "v2.0 · مکمل نئی ساخت",
     "viewUpdateHistory": "اپ ڈیٹ ہسٹری دیکھیں",
-    "authorRole": "تخلیق کار اور فل اسٹیک ڈویلپر",
-    "schoolInfo": "Aurora High School · گریڈ 11 (2027)",
-    "location": "ٹورنٹو، کینیڈا"
+    "authorRole": "تخلیق کار اور فل اسٹیک ڈویلپر"
   },
   "changelog": {
     "eyebrow": "نیا کیا ہے",

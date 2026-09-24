@@ -122,12 +122,6 @@ export const zhHantUI = {
     "placeholder": "點擊「生成練習單」來建立練習題"
   },
   "settings": {
-    "github": "GitHub",
-    "githubDesc": "給我個星星",
-    "coffee": "請我喝杯咖啡",
-    "coffeeDesc": "支持開發",
-    "helpAbout": "幫助 / 關於",
-    "helpAboutDesc": "介紹與聯繫我",
     "electronAnimation": "電子動畫",
     "playback": "播放",
     "speed": "速度",
@@ -135,9 +129,6 @@ export const zhHantUI = {
     "temperature": "溫度",
     "density": "密度",
     "energy": "能量",
-    "sendSuggestion": "送出建議",
-    "suggestHint": "幫助我們改進 Zperiod — 選擇主題或自由輸入。",
-    "sendBtnText": "送出",
     "preferences": "高级能力",
     "appearance": "外观设置",
     "theme": "界面主题",
@@ -149,14 +140,7 @@ export const zhHantUI = {
     "clearData": "清除本地缓存",
     "clearHint": "重置单位偏好、主题与本地数据",
     "clearButton": "清除",
-    "chipMoreData": "更多資料",
-    "chipBugReport": "問題回報",
-    "chipNewTool": "新工具",
-    "chipUIDesign": "介面設計",
-    "chipOther": "其他",
-    "suggestPlaceholder": "輸入你的建議...",
-    "changelog": "更新日誌",
-    "addLanguage": "添加语言"
+    "changelog": "更新日誌"
   },
   "ionGroup": {
     "plus1Cations": "+1 陽離子",
@@ -229,15 +213,6 @@ export const zhHantUI = {
     "balancerHelpRule2": "請寫 Fe2O3，不要寫 Fe2 O3 或 Fe 2O3。",
     "balancerHelpRule3": "也可以直接貼上帶箭頭的寫法，例如 H2 + O2 → H2O。",
     "balancerHelpExample": "範例：Fe + O2 → Fe2O3"
-  },
-  "settingsCtrl": {
-    "suggSent": "已发送！感谢您的反馈。",
-    "suggPlaceholder": "输入你的建议...",
-    "continuePlaceholder": "继续输入...",
-    "prefillMoreData": "補充更多元素資料",
-    "prefillBugReport": "問題回報：",
-    "prefillNewTool": "新工具點子：",
-    "prefillUIDesign": "介面優化建議："
   },
   "common": {
     "clickToChangeUnit": "點擊切換單位",
@@ -602,9 +577,7 @@ export const zhHantUI = {
     "cta": "開始使用",
     "footer": "v2.0 · 全面重構",
     "viewUpdateHistory": "查看更新歷史",
-    "authorRole": "創作者 / 全棧開發者",
-    "schoolInfo": "Aurora High School · 11 年級（2027）",
-    "location": "加拿大 多倫多"
+    "authorRole": "創作者 / 全棧開發者"
   },
   "changelog": {
     "eyebrow": "更新內容",

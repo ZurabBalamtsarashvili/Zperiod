@@ -1,16 +1,10 @@
 import { changelogData } from "../data/changelogData.js";
 import { changelogLocales } from "../data/changelogLocales.js";
-import {
-  SUCCESS_ICON_SVG,
-  flashSentState,
-  submitSuggestion,
-} from "./feedbackController.js";
 import { getLang, onLangChange, t } from "./langController.js";
 
 const ANIMATION_PAUSED_KEY = "zperiod_anim_paused";
 const ANIMATION_SPEED_KEY = "zperiod_anim_speed";
 const DEFAULT_ANIMATION_SPEED = 0.6;
-const SETTINGS_FEEDBACK_DURATION_MS = 2500;
 const UNIT_SYNC_RESIZE_DELAY_MS = 80;
 const UNIT_SYNC_BOOTSTRAP_DELAYS_MS = [150, 600];
 const UNIT_SLIDER_TRANSITION =
@@ -33,11 +27,9 @@ export function applyAnimationPauseState(paused) {
 }
 
 export function initSettingsController(options = {}) {
-  const { onOpenWelcome, l3UnitState, setGlobalUnit } = options;
+  const { l3UnitState, setGlobalUnit } = options;
 
   renderChangelog();
-  initSettingsSuggestionForm();
-  initWelcomeButton(onOpenWelcome);
   initAnimationControls();
   initPreferencesCard();
   syncCardHeights();
@@ -103,123 +95,6 @@ function renderChangelog() {
       },
     )
     .join("");
-}
-
-function initSettingsSuggestionForm() {
-  const suggInput = document.getElementById("settings-suggestion-input");
-  const suggSend = document.getElementById("settings-suggestion-send");
-  const suggStatus = document.getElementById("suggest-status");
-  const chipContainer = document.getElementById("suggest-chips");
-
-  if (!suggInput || !suggSend) return;
-
-  initSuggestionChips({ chipContainer, suggInput });
-
-  const originalSendHTML = suggSend.innerHTML;
-
-  const resizeTextarea = () => {
-    suggInput.style.height = "auto";
-    suggInput.style.height = `${Math.min(suggInput.scrollHeight, 160)}px`;
-  };
-
-  const sendSuggestion = async () => {
-    const text = suggInput.value.trim();
-    if (!text) return;
-
-    await submitSuggestion(text, { source: "Zperiod Settings" });
-
-    suggInput.value = "";
-    resizeTextarea();
-    clearActiveSuggestionChip(chipContainer);
-
-    if (suggStatus) {
-      suggStatus.textContent = t("settingsCtrl.suggSent");
-      suggStatus.className = "sv-suggest-status success";
-    }
-
-    flashSentState(suggSend, {
-      duration: SETTINGS_FEEDBACK_DURATION_MS,
-      onReset: () => {
-        if (suggStatus) {
-          suggStatus.textContent = "";
-          suggStatus.className = "sv-suggest-status";
-        }
-        suggInput.placeholder = t("settingsCtrl.suggPlaceholder");
-      },
-    });
-  };
-
-  suggSend.addEventListener("click", sendSuggestion);
-  suggInput.addEventListener("input", resizeTextarea);
-}
-
-function initSuggestionChips({ chipContainer, suggInput }) {
-  if (!chipContainer || !suggInput) return;
-
-  let activeChip = null;
-
-  const getChipPrefillText = (chip) => {
-    if (!chip) return "";
-    const prefillKey = chip.dataset.prefillKey;
-    if (prefillKey) return t(prefillKey);
-    return chip.dataset.text || "";
-  };
-
-  const resizeTextarea = () => {
-    suggInput.style.height = "auto";
-    suggInput.style.height = `${Math.min(suggInput.scrollHeight, 160)}px`;
-  };
-
-  onLangChange(() => {
-    const prefill = getChipPrefillText(activeChip);
-    if (activeChip) {
-      suggInput.value = prefill;
-    }
-    suggInput.placeholder = prefill
-      ? t("settingsCtrl.continuePlaceholder")
-      : t("settingsCtrl.suggPlaceholder");
-    resizeTextarea();
-  });
-
-  chipContainer.addEventListener("click", (event) => {
-    const chip = event.target.closest(".sv-chip");
-    if (!chip) return;
-
-    if (activeChip) activeChip.classList.remove("active");
-
-    if (activeChip === chip) {
-      activeChip = null;
-      suggInput.value = "";
-      suggInput.placeholder = t("settingsCtrl.suggPlaceholder");
-      resizeTextarea();
-      return;
-    }
-
-    activeChip = chip;
-    chip.classList.add("active");
-
-    const prefill = getChipPrefillText(chip);
-    suggInput.value = prefill;
-    suggInput.placeholder = prefill
-      ? t("settingsCtrl.continuePlaceholder")
-      : t("settingsCtrl.suggPlaceholder");
-    resizeTextarea();
-    suggInput.focus();
-  });
-}
-
-function clearActiveSuggestionChip(chipContainer) {
-  const activeChip = chipContainer?.querySelector(".sv-chip.active");
-  if (activeChip) activeChip.classList.remove("active");
-}
-
-function initWelcomeButton(onOpenWelcome) {
-  const openWelcomeBtn = document.getElementById("settings-open-welcome");
-  if (!openWelcomeBtn || typeof onOpenWelcome !== "function") return;
-
-  openWelcomeBtn.addEventListener("click", () => {
-    onOpenWelcome();
-  });
 }
 
 function initAnimationControls() {

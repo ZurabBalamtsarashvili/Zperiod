@@ -122,12 +122,6 @@ export const frUI = {
     "placeholder": "Cliquez sur 'Generer la fiche' pour creer des exercices"
   },
   "settings": {
-    "github": "GitHub",
-    "githubDesc": "Code source et contributions",
-    "coffee": "Offrir un cafe",
-    "coffeeDesc": "Soutenir le developpement",
-    "helpAbout": "Aide / A propos",
-    "helpAboutDesc": "Introduction & Contact",
     "electronAnimation": "Animation electronique",
     "playback": "Lecture",
     "speed": "Vitesse",
@@ -135,17 +129,7 @@ export const frUI = {
     "temperature": "Temperature",
     "density": "Densite",
     "energy": "Energie",
-    "sendSuggestion": "Envoyer une suggestion",
-    "suggestHint": "Aidez-nous a ameliorer Zperiod — choisissez un sujet ou ecrivez votre idee.",
-    "chipMoreData": "Plus de donnees",
-    "chipBugReport": "Signaler un bug",
-    "chipNewTool": "Nouvel outil",
-    "chipUIDesign": "Interface / Conception",
-    "chipOther": "Autre",
-    "suggestPlaceholder": "Entrez votre suggestion...",
-    "changelog": "Journal des modifications",
-    "addLanguage": "Ajouter une langue",
-    "sendBtnText": "Envoyer"
+    "changelog": "Journal des modifications"
   },
   "ionGroup": {
     "plus1Cations": "Cations +1",
@@ -222,15 +206,6 @@ export const frUI = {
     "balancerHelpRule2": "Ecrivez Fe2O3, et non Fe2 O3 ou Fe 2O3.",
     "balancerHelpRule3": "Vous pouvez aussi coller une ecriture avec fleche comme H2 + O2 → H2O.",
     "balancerHelpExample": "Exemple : Fe + O2 → Fe2O3"
-  },
-  "settingsCtrl": {
-    "suggSent": "Envoye ! Merci pour votre retour.",
-    "suggPlaceholder": "Entrez votre suggestion...",
-    "continuePlaceholder": "Continuez a ecrire...",
-    "prefillMoreData": "Ajouter plus de donnees sur les elements",
-    "prefillBugReport": "Signalement de bug : ",
-    "prefillNewTool": "Idee de nouvel outil : ",
-    "prefillUIDesign": "Amelioration de l'interface : "
   },
   "balancer": {
     "title": "Equilibrage d'equation",
@@ -558,9 +533,7 @@ export const frUI = {
     "cta": "Commencer",
     "footer": "v2.0 · Refonte complete",
     "viewUpdateHistory": "Voir l'historique des mises a jour",
-    "authorRole": "Createur et developpeur full stack",
-    "schoolInfo": "Aurora High School · 11e annee (2027)",
-    "location": "Toronto, Canada"
+    "authorRole": "Createur et developpeur full stack"
   },
   "changelog": {
     "eyebrow": "Nouveautes",

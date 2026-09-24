@@ -122,12 +122,6 @@ export const ruUI = {
     "placeholder": "Нажмите «Сгенерировать», чтобы создать задания"
   },
   "settings": {
-    "github": "GitHub",
-    "githubDesc": "Исходный код и вклад",
-    "coffee": "Поддержать автора",
-    "coffeeDesc": "Поддержать разработку",
-    "helpAbout": "Помощь / О проекте",
-    "helpAboutDesc": "Введение и контакты",
     "electronAnimation": "Анимация электронов",
     "playback": "Воспроизведение",
     "speed": "Скорость",
@@ -135,9 +129,6 @@ export const ruUI = {
     "temperature": "Температура",
     "density": "Плотность",
     "energy": "Энергия",
-    "sendSuggestion": "Отправить предложение",
-    "suggestHint": "Помогите улучшить Zperiod — выберите тему или напишите свою.",
-    "sendBtnText": "Отправить",
     "preferences": "Preferences",
     "appearance": "Appearance",
     "theme": "Theme",
@@ -149,14 +140,7 @@ export const ruUI = {
     "clearData": "Clear Local Data",
     "clearHint": "Resets theme, units, and cache",
     "clearButton": "Clear",
-    "chipMoreData": "Больше данных",
-    "chipBugReport": "Сообщить о баге",
-    "chipNewTool": "Новый инструмент",
-    "chipUIDesign": "Дизайн / Интерфейс",
-    "chipOther": "Другое",
-    "suggestPlaceholder": "Введите свое предложение...",
-    "changelog": "Список изменений",
-    "addLanguage": "Add Language"
+    "changelog": "Список изменений"
   },
   "ionGroup": {
     "plus1Cations": "Катионы +1",
@@ -229,15 +213,6 @@ export const ruUI = {
     "balancerHelpRule2": "Пишите Fe2O3, а не Fe2 O3 или Fe 2O3.",
     "balancerHelpRule3": "Можно также вставить запись со стрелкой, например H2 + O2 → H2O.",
     "balancerHelpExample": "Пример: Fe + O2 → Fe2O3"
-  },
-  "settingsCtrl": {
-    "suggSent": "Отправлено! Спасибо за отзыв.",
-    "suggPlaceholder": "Введите свое предложение...",
-    "continuePlaceholder": "Продолжайте печатать...",
-    "prefillMoreData": "Добавить больше данных об элементах",
-    "prefillBugReport": "Сообщение об ошибке: ",
-    "prefillNewTool": "Идея нового инструмента: ",
-    "prefillUIDesign": "Улучшение интерфейса: "
   },
   "common": {
     "clickToChangeUnit": "Нажмите, чтобы изменить единицу",
@@ -602,9 +577,7 @@ export const ruUI = {
     "cta": "Начать",
     "footer": "v2.0 · Полная переработка",
     "viewUpdateHistory": "Посмотреть историю обновлений",
-    "authorRole": "Создатель и full-stack разработчик",
-    "schoolInfo": "Aurora High School · 11 класс (2027)",
-    "location": "Торонто, Канада"
+    "authorRole": "Создатель и full-stack разработчик"
   },
   "changelog": {
     "eyebrow": "Что нового",
